@@ -5,6 +5,7 @@ import "./navbar.scss";
 import { navLinks } from "./navLinks";
 import Button from "../button/Button";
 import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,6 +44,9 @@ const Navbar = () => {
         {/* mobile nav */}
         <div className={`mobileNav ${isOpen && "toggleSidebar"}`}>
           <div className="mobileNavWrapper">
+            <div className="closeIconContainer">
+              <IoClose onClick={() => setIsOpen(false)} className="closeIcon" />
+            </div>
             <ul className="mobileUl">
               {navLinks.map((navItem, ind) => (
                 <li key={ind} className="mobileLi">

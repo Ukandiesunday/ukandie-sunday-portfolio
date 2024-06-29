@@ -27,8 +27,6 @@
       align-items: center;
       gap: 5px;
       .logo {
-        // color: #159557;
-        // color: #5571c4;
         color: royalblue;
         font-weight: 900;
         font-size: 18px;
@@ -62,7 +60,7 @@
       min-height: 100vh;
       position: absolute;
       top: 70px;
-      right: -250px;
+      left: -250px;
       background-color: #f6f9fc;
       z-index: 100;
       color: royalblue;
@@ -70,16 +68,27 @@
       font-weight: 600;
       text-transform: capitalize;
 
-      transition: right 1s ease-in-out;
-      .mobileUl {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        margin: 20px auto;
-        padding-top: 20px;
-        .mobileLi {
-          margin: 20px;
+      transition: left 1s ease-in-out;
+      .mobileNavWrapper {
+        .closeIconContainer {
+          margin-right: 5px;
+
+          .closeIcon {
+            float: right;
+            width: 27px;
+            height: 27px;
+            background-color: #e7eaf5;
+            border-radius: 50%;
+            cursor: pointer;
+            color: royalblue;
+          }
+        }
+        .mobileUl {
+          display: flex;
+
+          flex-direction: column;
+          gap: 40px;
+          padding: 60px 0px 20px 30px;
         }
       }
     }
@@ -98,16 +107,25 @@
 
         .menuButton {
           display: block;
+          width: 37px;
+          height: 37px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #e7eaf5;
+          border-radius: 50%;
           .menuIcon {
-            font-size: 30px;
+            margin-top: 2px;
+            font-size: 25px;
             font-weight: 700;
-            color: #7c87a8;
+
+            color: royalblue;
           }
         }
       }
       .mobileNav {
         &.toggleSidebar {
-          right: 0;
+          left: 0;
         }
       }
     }
