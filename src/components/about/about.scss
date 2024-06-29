@@ -1,0 +1,28 @@
+.aboutContainer {
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 70px;
+
+  .aboutSection {
+    h3 {
+      font-size: 35px;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+    }
+    p {
+      line-height: 26px;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    .aboutSection {
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}

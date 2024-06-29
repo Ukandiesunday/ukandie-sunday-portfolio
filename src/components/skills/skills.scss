@@ -1,0 +1,83 @@
+.skillsContainer {
+  width: 100% !important;
+  h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .skillsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .skills {
+      width: 100%;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 1px;
+      }
+      .ratingBar {
+        height: 10px;
+        display: flex;
+        width: 100%;
+        background: royalblue;
+        border-radius: 0px 5px 5px 0px;
+        position: relative;
+        .ratingBarInner {
+          position: absolute;
+          height: 10px;
+          width: 100%;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          border-radius: 0px 5px 5px 0px;
+          background: linear-gradient(
+            to right,
+            rgb(28, 79, 231),
+            rgb(252, 8, 252)
+          );
+          &.firstRating {
+            width: 98%;
+          }
+          &.secondRating {
+            width: 90%;
+          }
+          &.thirdRating {
+            width: 85%;
+          }
+          &.fourthRating {
+            width: 89%;
+          }
+          &.fifthRating {
+            width: 87%;
+          }
+          &.fifthRating {
+            width: 87%;
+          }
+          &.sixthRating {
+            width: 70%;
+          }
+          &.seventhRating {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsContainer {
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+//  initial={{ x: "-100%", opacity: 0 }}
+//                 animate={{ x: 0, opacity: 1 }}
+//                 transition={{ duration: 0.5, delay: 0.5 }}

@@ -1,13 +1,115 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding-inline: 5%;
-  .navLeft {
-    .img {
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
-      border-radius: 50%;
+
+  height: 70px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(64, 55, 98, 0.1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+
+  background-color: #f6f9fc;
+  .navWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    .navLeft {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .logo {
+        // color: #159557;
+        // color: #5571c4;
+        color: royalblue;
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    .navRight {
+      .ul {
+        display: flex;
+        gap: 40px;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 19px;
+        .li {
+          letter-spacing: 1px;
+          color: var(--text-secondary);
+          color: #7c87a8;
+        }
+      }
+      .menuButton {
+        display: none;
+      }
+    }
+    .mobileNav {
+      width: 250px;
+      min-height: 100vh;
+      position: absolute;
+      top: 70px;
+      right: -250px;
+      background-color: #f6f9fc;
+      z-index: 100;
+      color: royalblue;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+
+      transition: right 1s ease-in-out;
+      .mobileUl {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin: 20px auto;
+        padding-top: 20px;
+        .mobileLi {
+          margin: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    .navWrapper {
+      padding-inline: 20px;
+      position: relative;
+      .navRight {
+        .ul {
+          display: none;
+        }
+
+        .menuButton {
+          display: block;
+          .menuIcon {
+            font-size: 30px;
+            font-weight: 700;
+            color: #7c87a8;
+          }
+        }
+      }
+      .mobileNav {
+        &.toggleSidebar {
+          right: 0;
+        }
+      }
     }
   }
 }

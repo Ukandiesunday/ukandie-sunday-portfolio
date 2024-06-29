@@ -1,23 +1,29 @@
-const navLinks = [
+type NavType = {
+  id: number;
+  link: string;
+};
+
+const navLinks: NavType[] = [
   {
-    id: "1",
+    id: 1,
     link: "about",
   },
   {
-    id: "1",
+    id: 2,
     link: "service",
   },
-
   {
-    id: "2",
-    link: "resume",
-  },
-  {
-    id: "3",
+    id: 4,
     link: "projects",
   },
   {
-    id: "4",
+    id: 3,
+    link: "resume",
+  },
+
+  {
+    id: 5,
     link: "contact",
   },
 ];
+export { navLinks };

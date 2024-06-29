@@ -1,41 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-$txt-pri-dark: #1c1e26;
-$txt-pri-white: #cbd1da;
-$bg-dark: #1c1e26;
-$bg-white: #f6f9fc;
-$border: #d8dee8;
-$box-shadow: rgba(64, 55, 98, 0.1);
-$bg-fill: #ffffff;
-$t-dark: #3b3f4a;
-$t-white: #cbd1da;
-$bg-green: #159557;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans";
+  font-family: Poppins, sans-serif;
 }
 
-.light {
-  background: $bg-white;
-  color: $txt-pri-dark;
+// LIGHT THEME COLORS
+
+$light-bg-soft: #f6f9fc;
+$light-bg-color: #fff;
+$light-text-color: #7c87a8;
+$light-text-color-soft: #cbd1da;
+$bg-green: #159557;
+$border: #d8dee8;
+
+// DARK THEME COLORS
+$dark-bg-soft: #1c1e26;
+$dark-bg-color: #000;
+$dark-text-color: #dbdeeb;
+$dark-text-color-soft: #cbd1da;
+$bg-green: #159557;
+$border: #d8dee8;
+:root {
+  --bg-primary: $light-bg-soft;
+  --text-primary: $light-text-color;
+  --text-secondary: $light-text-color-soft;
+  --border: $border;
+  --bg-green: $bg-green;
 }
-.dark {
-  background: $bg-dark;
-  color: $txt-pri-white;
+
+[data-theme="dark"] {
+  --bg-primary: $dark-bg-soft;
+  --text-primary: $dark-text-color;
+  --text-secondary: $dark-text-color-soft;
+  --border: $border;
+  --bg-green: $bg-green;
 }
 
 body {
-  text-align: center;
+  background-color: $light-bg-soft;
+  color: $light-text-color;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
-.btn {
+.button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.App {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
 }
