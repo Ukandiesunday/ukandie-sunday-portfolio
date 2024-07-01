@@ -1,4 +1,8 @@
 import { SlCallEnd } from "react-icons/sl";
+import { FaCode } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
+import { FaFigma } from "react-icons/fa6";
+import { AiOutlineApi } from "react-icons/ai";
 import "./service.scss";
 
 const Service = () => {
@@ -16,6 +20,7 @@ const Service = () => {
       <div className="serviceCards">
         <div className="cardCols">
           <div className="card">
+            <FaCode className="icon" />
             <h2>Web development</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic
@@ -23,10 +28,10 @@ const Service = () => {
               dolorum ratione esse sit vitae est. Ipsam blanditiis quisquam
               suscipit saepe?
             </p>
-            <SlCallEnd className="icon" />
           </div>
 
           <div className="card">
+            <AiOutlineApi className="icon" />
             <h2>APIs integration</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
@@ -34,11 +39,11 @@ const Service = () => {
               labore quos perspiciatis corporis, dolor architecto molestiae
               pariatur eius placeat odit corrupti explicabo exercitationem!
             </p>
-            <SlCallEnd className="icon" />
           </div>
         </div>
         <div className="cardCols">
           <div className="card">
+            <BsGlobe className="icon" />
             <h2>SEO Optimization</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,10 +51,10 @@ const Service = () => {
               nisi, necessitatibus amet voluptates earum, placeat reprehenderit
               voluptatum! Consectetur laboriosam quos hic sunt?
             </p>
-            <SlCallEnd className="icon" />
           </div>
 
           <div className="card">
+            <FaFigma className="icon" />
             <h2>Design translation</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
@@ -57,9 +62,7 @@ const Service = () => {
               porro iusto impedit expedita harum esse officia, quisquam
               doloremque. Harum fugiat modi possimus!
             </p>
-            <div className="iconContainer ">
-              <SlCallEnd className="icon" />
-            </div>
+            <div className="iconContainer "></div>
           </div>
         </div>
       </div>
