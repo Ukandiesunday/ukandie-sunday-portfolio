@@ -1,9 +1,133 @@
 .contact {
   padding: 50px 30px;
-  h3 {
-    font-size: 35px;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    color: royalblue;
+
+  .contactWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+    .contactLeft {
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        color: royalblue;
+      }
+
+      .imgContainer {
+        .img {
+          overflow: hidden;
+          border-radius: 10px;
+        }
+      }
+      .phone {
+        display: flex;
+        gap: 5px;
+        font-size: 15px;
+        font-weight: 600;
+
+        text-transform: capitalize;
+      }
+      .mailContainer {
+        font-size: 28px;
+        display: flex;
+        gap: 20px;
+        .whatsapp {
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          background-color: #fff;
+          color: forestgreen;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+        .mail {
+          @extend .whatsapp;
+          color: royalblue;
+        }
+      }
+    }
+    .contactRight {
+      h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        color: royalblue;
+        border-bottom: 3px solid royalblue;
+        width: fit-content;
+      }
+      flex-basis: 70%;
+      .form {
+        .inputDivider {
+          display: flex;
+          gap: 25px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .textAreaContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        margin-bottom: 4px;
+      }
+      width: 100%;
+      textarea {
+        width: 100%;
+        padding: 10px 15px;
+        display: block;
+        background: #ffffff;
+        border: 1px solid #cbd1da;
+        border-radius: 10px;
+        outline: none;
+      }
+      .error {
+        font-weight: 500;
+        font-size: 13px;
+        color: rgb(244, 93, 93);
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .contact {
+    h3 {
+      text-align: center;
+      font-size: 25px;
+    }
+    .contactWrapper {
+      flex-wrap: wrap;
+      .contactLeft {
+        align-items: center;
+        flex-basis: 100%;
+        .imgContainer {
+          max-width: 330px !important;
+          .img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .contactRight {
+        flex-basis: 100%;
+        h3 {
+          text-align: center;
+          width: 100%;
+          border-bottom: 0;
+        }
+        .form {
+          .inputDivider {
+            flex-direction: column;
+          }
+        }
+      }
+    }
   }
 }

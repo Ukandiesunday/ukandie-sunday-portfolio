@@ -69,12 +69,10 @@
               justify-content: center;
               background: #fff;
               color: #5571c4;
-              // color: royalblue;
               width: 40px;
               height: 40px;
               padding: 5px;
               padding: 7px;
-              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
               border-radius: 7px;
 
               &:hover {
@@ -102,7 +100,7 @@
             padding: 8px 10px;
             border-radius: 10px;
             border: 0.5px solid #5571c4;
-            border-bottom: 3px solid #5571c4;
+            border-bottom: 2.5px solid #5571c4;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
             position: relative;
             .cv {
@@ -148,7 +146,6 @@
             max-width: max-content;
             height: 55px;
             margin-top: 12px;
-
             border-radius: 7px;
             font-size: 14px;
             font-weight: 600;

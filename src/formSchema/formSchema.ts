@@ -7,6 +7,10 @@ export const formSchema = yup.object().shape({
     .string()
     .email("Enter a valid email")
     .required("Email is required"),
-  phoneNumber: yup.string().required("phone number is required"),
-  message: yup.string().required("message is required"),
+  phoneNumber: yup
+    .string()
+    .required("phone number is required")
+    .matches(/^[0-9]{11}$/, "Invalid phone number"),
+
+  message: yup.string().required("Message is required"),
 });

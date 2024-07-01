@@ -65,3 +65,12 @@ ul {
   max-width: 1440px;
   margin-inline: auto;
 }
+
+label {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+button:disabled {
+  background: #7c87a8;
+}

@@ -4,17 +4,24 @@ interface InputProps {
   label: string;
   errors: boolean;
   errorMessage: string;
-  icon?: any;
+  placeholder: string;
 }
-const Input = ({ label, register, errors, errorMessage, icon }: InputProps) => {
+const Input = ({
+  label,
+  register,
+  errors,
+  errorMessage,
+  placeholder,
+}: InputProps) => {
   return (
     <div className="input">
-      <label htmlFor={label}>{label}</label>
+      <label className="label" htmlFor={label}>
+        {label}
+      </label>
       <div className="inputContainer">
-        <span>{icon}</span>{" "}
-        <input type="text" name="" id={label} {...register} />
+        <input placeholder={placeholder} name="" id={label} {...register} />
       </div>
-      {errors && <p>{errorMessage}</p>}
+      {errors && <p className="error">{errorMessage}</p>}
     </div>
   );
 };

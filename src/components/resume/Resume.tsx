@@ -10,7 +10,7 @@ const Resume = () => {
   console.log(taps);
   return (
     <div className="resume">
-      <h3>Resume</h3>
+      <h3>my resume</h3>
       <div className="resumeTapsContainer ">
         <div
           onClick={() => handelTapChange(0)}
