@@ -7,13 +7,13 @@ import "./service.scss";
 
 const Service = () => {
   return (
-    <div className="service">
+    <div className="service" id="service">
       <div className="serviceDetailsContainer ">
         <h3>What I Do</h3>
         <p>
-          I build website from scratch, update existing website, optimize code
-          for seamless SEO, translate design wire frames into actual code,
-          integrate Restful APIs, implement authentication system, create
+          I build websites from scratch, update existing websites, optimize code
+          for seamless SEO, translate design wireframes into actual code,
+          integrate Restful APIs, implement authentication systems, create
           seamless UX and application SEO principles.
         </p>
       </div>
@@ -23,10 +23,10 @@ const Service = () => {
             <FaCode className="icon" />
             <h2>Web development</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic
-              similique veritatis fuga iste facilis qui! Dolore provident magnam
-              dolorum ratione esse sit vitae est. Ipsam blanditiis quisquam
-              suscipit saepe?
+              I build websites from scratch, ensuring websites are
+              mobile-friendly and cross-browser compatible. Optimize codes for
+              seamless performance, Knowledgeable in Git and GitHub for code
+              management and collaboration. .
             </p>
           </div>
 
@@ -34,10 +34,12 @@ const Service = () => {
             <AiOutlineApi className="icon" />
             <h2>APIs integration</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-              debitis quibusdam laudantium assumenda, commodi fugit, alias
-              labore quos perspiciatis corporis, dolor architecto molestiae
-              pariatur eius placeat odit corrupti explicabo exercitationem!
+              I Integrate RESTful APIs to enhance web application functionality
+              with adequate error handling, experienced in NodeJs and MongoDB,
+              enabling seamless data exchange between front-end and back-end
+              systems. Ensure secure API communication by implementing
+              authentication mechanisms like OAuth2 and JWT, protecting
+              sensitive data and maintaining user privacy.
             </p>
           </div>
         </div>
@@ -46,10 +48,11 @@ const Service = () => {
             <BsGlobe className="icon" />
             <h2>SEO Optimization</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto numquam commodi quia quasi id, molestias sequi non
-              nisi, necessitatibus amet voluptates earum, placeat reprehenderit
-              voluptatum! Consectetur laboriosam quos hic sunt?
+              I Optimize website content, meta tags, headers, and URLs to
+              improve search engine visibility. Enhance readability and user
+              engagement. Ensure best practices for site speed,
+              mobile-friendliness, and secure (HTTPS) protocols. Utilize tools
+              like Google Lighthouse to identify issues and fixes.
             </p>
           </div>
 
@@ -57,10 +60,12 @@ const Service = () => {
             <FaFigma className="icon" />
             <h2>Design translation</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-              exercitationem enim eveniet aperiam similique ullam! Veniam ea
-              porro iusto impedit expedita harum esse officia, quisquam
-              doloremque. Harum fugiat modi possimus!
+              I Translate static design mockups into fully responsive and
+              interactive web pages while maintaining a consistent user
+              experience across various devices and screen sizes. Work closely
+              with design teams to Figma, and Sketch files into precise,
+              pixel-perfect web pages. Ensure that the final product accurately
+              matches the original design specifications.
             </p>
             <div className="iconContainer "></div>
           </div>

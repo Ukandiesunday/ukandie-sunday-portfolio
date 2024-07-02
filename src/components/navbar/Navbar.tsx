@@ -1,37 +1,47 @@
 import { RiMenu3Line } from "react-icons/ri";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import "./navbar.scss";
 import { navLinks } from "./navLinks";
 import Button from "../button/Button";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import Logo from "../logo/Logo";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [link, setLink] = useState("");
   const { theme, themeToggle } = useTheme();
   console.log(theme);
 
   const toggleSideBar = () => {
     setIsOpen((prev) => !prev);
   };
+
   return (
     <div className="navbar">
       <div className="navWrapper">
-        <div className="navLeft">
-          <img src="/images/ukandie1.jpg" alt="logo" className="img" />
-          <span className="logo">Uk.Dev</span>
-        </div>
+        <Logo />
 
         <div className="navRight">
-          <ul className="ul">
+          <nav className="nav">
             {navLinks.map((navItem, ind) => (
-              <li key={ind} className="li">
+              <Link
+                className={`nav-link ${navItem.link === link && "activeLink"}`}
+                onClick={() => {
+                  setLink(navItem.link);
+                  toggleSideBar;
+                }}
+                to={navItem.link}
+                key={ind}
+                smooth={true}
+                duration={700}
+                spy={true}
+              >
                 {navItem.link}
-              </li>
+              </Link>
             ))}
             {/* <button onClick={themeToggle}>theme</button> */}
-          </ul>
+          </nav>
 
           <div className="menuButton">
             <Button
@@ -45,16 +55,29 @@ const Navbar = () => {
         <div className={`mobileNav ${isOpen && "toggleSidebar"}`}>
           <div className="mobileNavWrapper">
             <div className="closeIconContainer">
-              <IoClose onClick={() => setIsOpen(false)} className="closeIcon" />
+              <IoClose onClick={toggleSideBar} className="closeIcon" />
             </div>
-            <ul className="mobileUl">
+            <nav className="mobileUl">
               {navLinks.map((navItem, ind) => (
-                <li key={ind} className="mobileLi">
+                <Link
+                  activeClass="active"
+                  className={`mobileLi ${
+                    navItem.link === link && "activeLink"
+                  }`}
+                  onClick={() => {
+                    setLink(navItem.link);
+                    toggleSideBar;
+                  }}
+                  to={navItem.link}
+                  key={ind}
+                  smooth={true}
+                  duration={700}
+                >
                   {navItem.link}
-                </li>
+                </Link>
               ))}
               {/* <button onClick={themeToggle}>theme</button> */}
-            </ul>
+            </nav>
           </div>
         </div>
       </div>

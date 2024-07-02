@@ -9,7 +9,7 @@ const Resume = () => {
   };
   console.log(taps);
   return (
-    <div className="resume">
+    <div className="resume" id="resume">
       <h3>my resume</h3>
       <div className="resumeTapsContainer ">
         <div
@@ -28,18 +28,51 @@ const Resume = () => {
       <div className="resumeBottom">
         <div className={`content ${taps === 0 && "activeContent"}`}>
           <h4>Work Experience</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-            molestias exercitationem inventore nemo alias error. Iure dolor
-            assumenda hic sint!
-          </p>
+          <div className="details">
+            <p>
+              • I worked with a startup company (moregift) where I built her
+              website from scratch, collaborated in building the organization
+              dashboard from the ground up.
+            </p>
+            <p>
+              • Translated (moregift) several email templates on figma into
+              functional interfaces.
+            </p>
+            <p>
+              • Synchronized with design and backend teams to integrate frontend
+              elements and backend logics effectively.
+            </p>
+            <p>
+              • I gained hands-on experience working with different clients' and
+              personal projects such as organization dashboard, e-commerce
+              website, blog website, portfolio website, Fintech website,
+              integration of authentication system and RESTful APIs etc.
+            </p>
+            <p> • Updated IndexPro website (freelancing)</p>
+          </div>
         </div>
         <div className={`content ${taps === 1 && "activeContent"}`}>
           <h4>Education</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-            laudantium?
-          </p>
+          <div className="contentEdu">
+            <h5>College of technology Akwa Ibom State</h5>
+            <p>
+              Diploma in Computer Science (Associate Programme), Computer
+              Science
+            </p>
+            <span>Jan 2022 {""}- Aug 2023 </span>
+          </div>
+          <div className="contentEdu">
+            <h5>
+              AkanuIbiam Federal Polytechnic Unwana, Ebonyi State ,Nigeria
+            </h5>
+            <p>Higher National Diploma, Accounting</p>
+            <span>Feb 2017 {""}- March 2021 </span>
+          </div>
+          <div className="contentEdu">
+            <h5>National youth Service Corps (NYSC)</h5>
+
+            <span>Feb 2022 - feb 2023 </span>
+          </div>
         </div>
       </div>
     </div>

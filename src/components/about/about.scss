@@ -1,5 +1,5 @@
 .aboutContainer {
-  padding: 50px 30px;
+  padding: 70px 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 70px;
@@ -9,7 +9,6 @@
       font-size: 35px;
       margin-bottom: 15px;
       text-transform: capitalize;
-      color: royalblue;
     }
     p {
       line-height: 26px;
@@ -22,7 +21,7 @@
   .aboutContainer {
     .aboutSection {
       h3 {
-        font-size: 25px;
+        font-size: 30px;
       }
     }
   }

@@ -15,6 +15,7 @@ import { BsGithub, BsSendCheck, BsTwitter } from "react-icons/bs";
 import { DiJavascript, DiReact } from "react-icons/di";
 import { BiDownload } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
+import SocialLinks from "../socialLinks/SocialLinks";
 
 const Banner = () => {
   // for typing
@@ -28,7 +29,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="banner">
+      <div className="banner" id="banner">
         <div className="bannerLeft">
           <div className="bannerLeftWrapper">
             <h3 className="welcomeMsg">Welcome to my portfolio</h3>
@@ -64,24 +65,7 @@ const Banner = () => {
                   </a>
                 </div>
               </div>
-
-              <div className="socialsContainer">
-                <h3>Find me on</h3>
-                <div className="socials">
-                  <a href="" className="socialMediaLinks">
-                    <FaLinkedinIn className="icon" />
-                  </a>
-                  <a href="" className="socialMediaLinks">
-                    <FaFacebookF className="icon" />
-                  </a>
-                  <a href="" className="socialMediaLinks">
-                    <BsTwitter className="icon" />
-                  </a>
-                  <a href="" className="socialMediaLinks">
-                    <BsGithub className="icon" />
-                  </a>
-                </div>
-              </div>
+              <SocialLinks header={"find me on"} />
               <div className="cvContainer">
                 <h3>Connect</h3>
                 <div className="cvWrapper sendMail">

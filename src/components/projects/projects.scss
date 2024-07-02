@@ -1,10 +1,10 @@
 .projects {
-  padding: 50px 30px;
+  padding: 70px 30px;
   h3 {
     font-size: 35px;
     margin-bottom: 20px;
     text-transform: capitalize;
-    color: royalblue;
+    // color: royalblue;
     text-align: center;
   }
 
@@ -21,7 +21,11 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-
+        p {
+          font-size: 15px;
+          // font-weight: 500;
+          line-height: 24px;
+        }
         .imgWrapper {
           border-radius: 10px;
           transition: transform 0.5s ease-out;

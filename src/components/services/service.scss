@@ -1,12 +1,12 @@
 .service {
-  padding: 50px 30px;
+  padding: 70px 30px;
   .serviceDetailsContainer {
     text-align: center;
     h3 {
       font-size: 35px;
       margin-bottom: 20px;
       text-transform: capitalize;
-      color: royalblue;
+      // color: royalblue;
     }
     p {
       max-width: 70%;
@@ -30,7 +30,7 @@
       .card {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         width: 100%;
         box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.1);
         padding: 40px;
@@ -64,7 +64,7 @@
         max-width: 100%;
       }
       h3 {
-        font-size: 25px;
+        font-size: 30px;
       }
     }
     .serviceCards {
@@ -75,6 +75,9 @@
           align-items: center;
           justify-content: center;
           box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+          h2 {
+            font-size: 25px;
+          }
         }
       }
     }

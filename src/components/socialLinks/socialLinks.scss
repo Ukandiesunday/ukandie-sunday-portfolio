@@ -1,0 +1,38 @@
+.socialLinks {
+  .socialsContainer {
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      .socialMediaLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: #5571c4;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        padding: 7px;
+        border-radius: 7px;
+
+        &:hover {
+          background-color: #b0bad8;
+          transition: background-color 0.3s ease-in-out;
+        }
+        &.bgwhite {
+          border: 1.5px solid royalblue;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

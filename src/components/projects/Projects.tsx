@@ -3,7 +3,7 @@ import { BiLink } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h3>My Projects</h3>
 
       <div className="cardContainer">
@@ -18,13 +18,34 @@ const Projects = () => {
             </div>
             <div className="linkContainer">
               <h4>E-commerce website</h4>
-              <a href="#" className="link">
+              <a href="https://car-store-fawn.vercel.app" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              modi.
+              In this website you can sort and filter cars, check different
+              views, add to cart, view dynamic related cars and buy,etc.
+            </p>
+          </div>
+        </div>
+
+        <div className="projectCards">
+          <div className="cardContentCols">
+            <div className="imgWrapper">
+              <img
+                className="img"
+                src="/images/moregift.png"
+                alt="ecommerce photo"
+              />
+            </div>
+            <div className="linkContainer">
+              <h4>Fintech Website</h4>
+              <a href="https://moregift.app/home" className="link">
+                <BiLink />
+              </a>
+            </div>
+            <p>
+              This website offers financial services, informative and educating.
             </p>
           </div>
         </div>
@@ -39,13 +60,13 @@ const Projects = () => {
             </div>
             <div className="linkContainer">
               <h4>Blog website</h4>
-              <a href="#" className="link">
+              <a href="https://modern-blog-umber.vercel.app" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              modi.
+              In this website, blog posts are fetched from the API, search
+              blogs, read dynamic related posts, check weather,etc.
             </p>
           </div>
         </div>
@@ -54,19 +75,19 @@ const Projects = () => {
             <div className="imgWrapper">
               <img
                 className="img"
-                src="/images/moregift.png"
+                src="/images/furn.png"
                 alt="ecommerce photo"
               />
             </div>
             <div className="linkContainer">
-              <h4>Fintech Website</h4>
-              <a href="#" className="link">
+              <h4>Furniture website</h4>
+              <a href="https://ukandie-furniture.vercel.app/" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              modi.
+              This is furniture website built with pure html, css and
+              JavaScript, here you can filter furniture by category.
             </p>
           </div>
         </div>
@@ -75,40 +96,19 @@ const Projects = () => {
             <div className="imgWrapper">
               <img
                 className="img"
-                src="/images/ecom.png"
-                alt="ecommerce photo"
-              />
-            </div>
-            <div className="linkContainer">
-              <h4>E-commerce website</h4>
-              <a href="#" className="link">
-                <BiLink />
-              </a>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              modi.
-            </p>
-          </div>
-        </div>
-        <div className="projectCards">
-          <div className="cardContentCols">
-            <div className="imgWrapper">
-              <img
-                className="img"
-                src="/images/ecom.png"
+                src="/images/ecom2.png"
                 alt="ecommerce photo"
               />
             </div>
             <div className="linkContainer">
               <h4>E-commerce website</h4>
-              <a href="#" className="link">
+              <a href="https://ukandie-shop.vercel.app/" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-              modi.
+              An e-commerce website built with pure html, css and JavaScript.
+              Here you can add to cart, and view product.
             </p>
           </div>
         </div>

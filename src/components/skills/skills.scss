@@ -4,7 +4,6 @@
     font-size: 35px;
     margin-bottom: 20px;
     text-transform: capitalize;
-    color: royalblue;
   }
   .skillsWrapper {
     display: flex;
@@ -74,7 +73,7 @@
 @media (max-width: 768px) {
   .skillsContainer {
     h3 {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 }

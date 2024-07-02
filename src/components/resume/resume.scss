@@ -1,10 +1,10 @@
 .resume {
-  padding: 50px 30px;
+  padding: 70px 30px;
   h3 {
     font-size: 35px;
     margin-bottom: 20px;
     text-transform: capitalize;
-    color: royalblue;
+    // color: royalblue;
     text-align: center;
   }
   .resumeTapsContainer {
@@ -47,6 +47,25 @@
       &.activeContent {
         display: block;
       }
+
+      h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .details {
+        font-weight: 500;
+        line-height: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 80%;
+      }
+      .contentEdu {
+        @extend .details;
+        line-height: 18px;
+        gap: 6px;
+        margin-top: 15px;
+      }
     }
   }
 }
@@ -55,10 +74,22 @@
   .resume {
     text-align: center;
     h3 {
-      font-size: 25px;
+      font-size: 30px;
     }
     .resumeTapsContainer {
       overflow-x: scroll;
+    }
+    .resumeBottom {
+      .content {
+        h4 {
+          text-align: left;
+          margin-block: 20px;
+        }
+        .details {
+          max-width: 100%;
+          text-align: left;
+        }
+      }
     }
   }
 }

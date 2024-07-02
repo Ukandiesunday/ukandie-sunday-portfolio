@@ -32,13 +32,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contactWrapper ">
         <div className="contactLeft">
           <h3>Get in Touch</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-            molestiae!
+            I'm at your services, contact me and see my creativity work for your
+            business.
           </p>
           <div className="imgContainer ">
             <img

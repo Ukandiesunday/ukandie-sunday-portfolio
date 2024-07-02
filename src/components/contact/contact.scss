@@ -1,5 +1,5 @@
 .contact {
-  padding: 50px 30px;
+  padding: 70px 30px;
 
   .contactWrapper {
     display: flex;
@@ -13,11 +13,13 @@
       gap: 20px;
       h3 {
         font-size: 35px;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
         text-transform: capitalize;
-        color: royalblue;
+        // color: royalblue;
       }
-
+      p {
+        line-height: 26px;
+      }
       .imgContainer {
         .img {
           overflow: hidden;
@@ -56,8 +58,7 @@
       h3 {
         font-size: 25px;
         margin-bottom: 20px;
-        color: royalblue;
-        border-bottom: 3px solid royalblue;
+
         width: fit-content;
       }
       flex-basis: 70%;
@@ -100,7 +101,7 @@
   .contact {
     h3 {
       text-align: center;
-      font-size: 25px;
+      font-size: 30px;
     }
     .contactWrapper {
       flex-wrap: wrap;
