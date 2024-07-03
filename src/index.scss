@@ -12,7 +12,7 @@
 
 $light-bg-soft: #f6f9fc;
 $light-bg-color: #fff;
-$light-text-color: #7c87a8;
+$light-text-color: #4c536c;
 $light-text-color-soft: #cbd1da;
 $bg-green: #159557;
 $border: #d8dee8;
@@ -22,23 +22,7 @@ $dark-bg-soft: #1c1e26;
 $dark-bg-color: #000;
 $dark-text-color: #dbdeeb;
 $dark-text-color-soft: #cbd1da;
-$bg-green: #159557;
 $border: #d8dee8;
-:root {
-  --bg-primary: $light-bg-soft;
-  --text-primary: $light-text-color;
-  --text-secondary: $light-text-color-soft;
-  --border: $border;
-  --bg-green: $bg-green;
-}
-
-[data-theme="dark"] {
-  --bg-primary: $dark-bg-soft;
-  --text-primary: $dark-text-color;
-  --text-secondary: $dark-text-color-soft;
-  --border: $border;
-  --bg-green: $bg-green;
-}
 
 body {
   background-color: $light-bg-soft;
@@ -73,4 +57,13 @@ label {
 
 button:disabled {
   background: #7c87a8;
+}
+
+.light {
+  background: $light-bg-soft;
+  color: $light-text-color;
+}
+.dark {
+  background: $dark-bg-soft;
+  color: $dark-text-color-soft;
 }

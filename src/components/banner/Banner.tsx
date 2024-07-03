@@ -10,8 +10,10 @@ import { DiJavascript, DiReact } from "react-icons/di";
 import { BiDownload } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
 import SocialLinks from "../socialLinks/SocialLinks";
+import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 
 const Banner = () => {
+  const { theme } = useTheme();
   // for typing
   const [text] = useTypewriter({
     words: ["Frontend developer.", "React developer.", "Next.js developer."],
@@ -28,7 +30,11 @@ const Banner = () => {
           <div className="bannerLeftWrapper">
             <h3 className="welcomeMsg">Welcome to my portfolio</h3>
             <div className="MobileProfileImgContainer ">
-              <img src="/images/uk.png" alt="" className="MobileProfileImg" />
+              <img
+                src="/images/ukandie1.jpg"
+                alt=""
+                className="MobileProfileImg"
+              />
             </div>
             <div>
               <h2 className="name">
@@ -77,7 +83,11 @@ const Banner = () => {
 
             <div className="toolsContainer">
               <h3>My technology stacks</h3>
-              <div className="skillsWrapper">
+              <div
+                className={`skillsWrapper ${
+                  theme === "light" ? "light" : "dark"
+                }`}
+              >
                 <span className="skills">
                   <FaHtml5 className="icon" />
                   Html5

@@ -1,3 +1,4 @@
+import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import "./input.scss";
 interface InputProps {
   register: any;
@@ -13,8 +14,9 @@ const Input = ({
   errorMessage,
   placeholder,
 }: InputProps) => {
+  const { theme } = useTheme();
   return (
-    <div className="input">
+    <div className={`input ${theme === "light" ? "light" : "dark"}`}>
       <label className="label" htmlFor={label}>
         {label}
       </label>

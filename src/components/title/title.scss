@@ -1,0 +1,11 @@
+h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 30px;
+  }
+}

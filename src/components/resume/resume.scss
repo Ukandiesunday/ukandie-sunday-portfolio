@@ -1,10 +1,6 @@
 .resume {
   padding: 70px 30px;
-  h3 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-    // color: royalblue;
+  .title {
     text-align: center;
   }
   .resumeTapsContainer {
@@ -27,14 +23,13 @@
       font-weight: 500;
       text-align: center;
       color: royalblue;
-      border: 1px solid royalblue;
+      border: 1.5px solid royalblue;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
       text-wrap: nowrap;
       transition: background-color 0.5s ease;
       &.activeTap {
-        border: 2px solid royalblue;
         font-weight: 500;
-        background-color: rgb(221, 225, 236);
+        background-color: royalblue;
         color: white;
         transition: background-color 0.5s ease;
       }
@@ -51,6 +46,7 @@
       h4 {
         font-size: 20px;
         margin-bottom: 10px;
+        text-transform: capitalize;
       }
       .details {
         font-weight: 500;
@@ -62,9 +58,12 @@
       }
       .contentEdu {
         @extend .details;
-        line-height: 18px;
+        line-height: 20px;
         gap: 6px;
         margin-top: 15px;
+        h5 {
+          text-transform: capitalize;
+        }
       }
     }
   }
@@ -73,9 +72,7 @@
 @media (max-width: 768px) {
   .resume {
     text-align: center;
-    h3 {
-      font-size: 30px;
-    }
+
     .resumeTapsContainer {
       overflow-x: scroll;
     }

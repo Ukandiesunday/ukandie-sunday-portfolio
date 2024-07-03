@@ -34,6 +34,10 @@
     font-weight: 600;
     padding-block: 20px;
   }
+  &.dark {
+    background: #cbd1da;
+    color: #1c1e26;
+  }
 }
 
 @media (max-width: 768px) {

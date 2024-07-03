@@ -3,17 +3,24 @@ import { BsGlobe } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa6";
 import { AiOutlineApi } from "react-icons/ai";
 import "./service.scss";
+import Title from "../title/Title";
+import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 
 const Service = () => {
+  const { theme } = useTheme();
   return (
-    <div className="service" id="service">
+    <div
+      className={`service ${theme === "light" ? "light" : "dark"}`}
+      id="service"
+    >
       <div className="serviceDetailsContainer ">
-        <h3>What I Do</h3>
+        <Title title={"What I Do"} />
+
         <p>
           I build websites from scratch, update existing websites, optimize code
           for seamless SEO, translate design wireframes into actual code,
           integrate Restful APIs, implement authentication systems, create
-          seamless UX and application SEO principles.
+          seamless UX and apply SEO principles.
         </p>
       </div>
       <div className="serviceCards">
@@ -34,11 +41,11 @@ const Service = () => {
             <h2>APIs integration</h2>
             <p>
               I Integrate RESTful APIs to enhance web application functionality
-              with adequate error handling, experienced in NodeJs and MongoDB,
-              enabling seamless data exchange between front-end and back-end
+              with adequate error handling, experienced in NodeJs, MongoDB, etc.
+              Enabling seamless data exchange between front-end and back-end
               systems. Ensure secure API communication by implementing
-              authentication mechanisms like OAuth2 and JWT, protecting
-              sensitive data and maintaining user privacy.
+              authentication mechanisms like OAuth and JWT, protecting sensitive
+              data and maintaining user privacy.
             </p>
           </div>
         </div>
@@ -62,9 +69,9 @@ const Service = () => {
               I Translate static design mockups into fully responsive and
               interactive web pages while maintaining a consistent user
               experience across various devices and screen sizes. Work closely
-              with design teams to Figma, and Sketch files into precise,
-              pixel-perfect web pages. Ensure that the final product accurately
-              matches the original design specifications.
+              with design teams to convert Figma designs, Sketch files into
+              precise and pixel-perfect web pages. Ensure that the final product
+              accurately matches the original design specifications.
             </p>
           </div>
         </div>

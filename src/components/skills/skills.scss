@@ -1,10 +1,6 @@
 .skillsContainer {
   width: 100% !important;
-  h3 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-  }
+
   .skillsWrapper {
     display: flex;
     flex-direction: column;
@@ -66,14 +62,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .skillsContainer {
-    h3 {
-      font-size: 30px;
     }
   }
 }

@@ -9,6 +9,8 @@ import { BsWhatsapp } from "react-icons/bs";
 
 import { MdMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import Title from "../title/Title";
+import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 
 type DataType = {
   firstName: string;
@@ -18,6 +20,7 @@ type DataType = {
   message: string;
 };
 const Contact = () => {
+  const { theme } = useTheme();
   const {
     handleSubmit,
     register,
@@ -33,10 +36,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact">
+    <div
+      className={`contact ${theme === "light" ? "light" : "dark"}`}
+      id="contact"
+    >
       <div className="contactWrapper ">
         <div className="contactLeft">
-          <h3>Get in Touch</h3>
+          <div className="title">
+            <Title title={"Get In Touch"} />
+          </div>
           <p>
             I'm at your services, contact me and see my creativity work for your
             business.

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./resume.scss";
+import Title from "../title/Title";
 
 const Resume = () => {
   const [taps, setTaps] = useState(0);
@@ -7,10 +8,12 @@ const Resume = () => {
   const handelTapChange = (number: any) => {
     setTaps(number);
   };
-  console.log(taps);
+
   return (
     <div className="resume" id="resume">
-      <h3>my resume</h3>
+      <div className="title">
+        <Title title={"My resume"} />
+      </div>
       <div className="resumeTapsContainer ">
         <div
           onClick={() => handelTapChange(0)}

@@ -1,9 +1,10 @@
+import Title from "../title/Title";
 import "./skills.scss";
 
 const Skills = () => {
   return (
     <div className="skillsContainer">
-      <h3>my professional skills</h3>
+      <Title title={"My Professional Skills"} />
 
       <div className="skillsWrapper">
         <div className="skills">

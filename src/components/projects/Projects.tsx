@@ -1,10 +1,18 @@
+import { useTheme } from "../../contexts/themecontext/ThemeProvider";
+import Title from "../title/Title";
 import "./projects.scss";
 import { BiLink } from "react-icons/bi";
 
 const Projects = () => {
+  const { theme } = useTheme();
   return (
-    <div className="projects" id="projects">
-      <h3>My Projects</h3>
+    <div
+      className={`projects ${theme === "light" ? "light" : "dark"}`}
+      id="projects"
+    >
+      <div className="title">
+        <Title title={"My projects"} />
+      </div>
 
       <div className="cardContainer">
         <div className="projectCards">
@@ -23,7 +31,7 @@ const Projects = () => {
               </a>
             </div>
             <p>
-              In this website you can sort and filter cars, check different
+              In this website you can sort and filter cars, check different cars
               views, add to cart, view dynamic related cars and buy,etc.
             </p>
           </div>
@@ -86,7 +94,7 @@ const Projects = () => {
               </a>
             </div>
             <p>
-              This is furniture website built with pure html, css and
+              This is a furniture website built with pure html, css and
               JavaScript, here you can filter furniture by category.
             </p>
           </div>
@@ -108,7 +116,7 @@ const Projects = () => {
             </div>
             <p>
               An e-commerce website built with pure html, css and JavaScript.
-              Here you can add to cart, and view product.
+              Here you can add to cart, and view single product.
             </p>
           </div>
         </div>

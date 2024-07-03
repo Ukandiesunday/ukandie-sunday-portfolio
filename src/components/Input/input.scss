@@ -22,11 +22,16 @@
   }
   .error {
     font-weight: 500;
-    font-size: 12px;
-    color: rgb(244, 93, 93);
+    font-size: 14px;
+    color: rgb(251, 92, 92);
     margin-top: 5px;
     &::first-letter {
       text-transform: uppercase;
+    }
+  }
+  &.dark {
+    .inputContainer {
+      background: #cbd1da;
     }
   }
 }

@@ -11,11 +11,9 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      h3 {
-        font-size: 35px;
-        // margin-bottom: 10px;
-        text-transform: capitalize;
-        // color: royalblue;
+
+      .title {
+        margin-bottom: -20px;
       }
       p {
         line-height: 26px;
@@ -95,13 +93,29 @@
       }
     }
   }
+  &.dark {
+    .contactWrapper {
+      .textAreaContainer {
+        textarea {
+          background-color: #cbd1da;
+        }
+      }
+
+      .contactLeft {
+        .mailContainer {
+          .whatsapp {
+            background-color: #cbd1da;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 769px) {
   .contact {
-    h3 {
+    .title {
       text-align: center;
-      font-size: 30px;
     }
     .contactWrapper {
       flex-wrap: wrap;

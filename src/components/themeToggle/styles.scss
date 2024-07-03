@@ -1,0 +1,20 @@
+.themeToggle {
+  background-color: #e7eaf5;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  .icon {
+    font-size: 20px;
+    font-weight: 500;
+    transition: transform 0.8s ease-in;
+    color: black;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}

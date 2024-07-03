@@ -3,10 +3,12 @@ import "./footer.scss";
 import SocialLinks from "../socialLinks/SocialLinks";
 import Logo from "../logo/Logo";
 import { Link } from "react-scroll";
+import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 
 const Footer = () => {
+  const { theme } = useTheme();
   return (
-    <div className="footer">
+    <div className={`footer ${theme === "light" ? "light" : "dark"}`}>
       <div className="footerContainer ">
         <div className="footerLogo">
           <Logo />

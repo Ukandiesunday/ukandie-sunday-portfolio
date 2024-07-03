@@ -1,4 +1,5 @@
 import Skills from "../skills/Skills";
+import Title from "../title/Title";
 import "./about.scss";
 
 const About = () => {
@@ -8,15 +9,17 @@ const About = () => {
         <Skills />
       </div>
       <div className="aboutSection">
-        <h3>About Me</h3>
+        <div className="title">
+          <Title title={"About Me"} />
+        </div>
         <p>
           I am a passionate and agile Frontend developer, committed to crafting
           stunning and engaging user-interfaces . <br />
           Specializes in translating static design mockups into interactive and
           responsive web pages while paying attention to detail. <br /> I have
           worked with a startup company where I learned how to set up quality
-          projects, worked with time, wrote clean, maintainable and reusable
-          codes, collaborated with design and backend teams to implement design
+          projects, work with time, write clean, maintainable and reusable
+          codes. Collaborated with design and backend teams to implement design
           features and backend logics effectively. <br /> I have efficient
           communication , problem-solving and analytical skills. Therefore, I
           will be glad to work with your awesome team and contribute my quota to
