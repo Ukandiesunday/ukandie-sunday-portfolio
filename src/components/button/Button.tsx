@@ -6,23 +6,10 @@ interface ButtonProps {
   label?: string;
   icon?: any;
   type?: any;
-  disabled?: boolean;
 }
-const Button = ({
-  onClick,
-  className,
-  label,
-  icon,
-  type,
-  disabled,
-}: ButtonProps) => {
+const Button = ({ onClick, className, label, icon, type }: ButtonProps) => {
   return (
-    <button
-      disabled={disabled}
-      type={type}
-      onClick={onClick}
-      className={`button ${className}`}
-    >
+    <button type={type} onClick={onClick} className={`button ${className}`}>
       {label}
       {icon}
     </button>

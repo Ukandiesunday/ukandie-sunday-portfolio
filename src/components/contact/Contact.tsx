@@ -22,7 +22,7 @@ const Contact = () => {
     handleSubmit,
     register,
     reset,
-    formState: { errors, isDirty },
+    formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
 
   const handleFormSubmit = (data: DataType, e: any) => {
@@ -122,12 +122,7 @@ const Contact = () => {
                 <p className="error">{errors.message.message}</p>
               )}
             </div>
-            <Button
-              disabled={!isDirty}
-              type={"submit"}
-              label="Send"
-              className={"btnBgcolor"}
-            />
+            <Button type={"submit"} label="Send" className={"btnBgcolor"} />
           </form>
         </div>
       </div>
