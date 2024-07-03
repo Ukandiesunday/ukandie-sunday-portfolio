@@ -1,6 +1,6 @@
 .footer {
   padding: 30px 30px;
-  background: #fff !important;
+
   margin-inline: auto;
   max-width: 1440px;
   .footerContainer {
@@ -37,6 +37,9 @@
   &.dark {
     background: #cbd1da;
     color: #1c1e26;
+  }
+  &.light {
+    background: #fff;
   }
 }
 
