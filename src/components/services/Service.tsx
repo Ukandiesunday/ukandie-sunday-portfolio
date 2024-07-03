@@ -1,4 +1,3 @@
-import { SlCallEnd } from "react-icons/sl";
 import { FaCode } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa6";
@@ -67,7 +66,6 @@ const Service = () => {
               pixel-perfect web pages. Ensure that the final product accurately
               matches the original design specifications.
             </p>
-            <div className="iconContainer "></div>
           </div>
         </div>
       </div>
