@@ -17,7 +17,7 @@ const Skills = () => {
 
         <div className="skills">
           <span className="text">
-            CSS3 <span>90%</span>
+            CSS3 <span>94%</span>
           </span>
           <div className="ratingBar">
             <div className="ratingBarInner secondRating"></div>
@@ -26,7 +26,7 @@ const Skills = () => {
 
         <div className="skills">
           <span className="text">
-            JavaScript ES6+ <span>85%</span>
+            JavaScript ES6+ <span>89%</span>
           </span>
           <div className="ratingBar">
             <div className="ratingBarInner thirdRating"></div>
@@ -34,7 +34,7 @@ const Skills = () => {
         </div>
         <div className="skills">
           <span className="text">
-            React <span>89%</span>
+            React <span>91%</span>
           </span>
           <div className="ratingBar">
             <div className="ratingBarInner fourthRating"></div>
@@ -42,7 +42,7 @@ const Skills = () => {
         </div>
         <div className="skills">
           <span className="text">
-            Next.js <span>87%</span>
+            Next.js <span>90%</span>
           </span>
           <div className="ratingBar">
             <div className="ratingBarInner fifthRating"></div>
@@ -50,7 +50,7 @@ const Skills = () => {
         </div>
         <div className="skills">
           <span className="text">
-            TypeScript <span>70%</span>
+            TypeScript <span>85%</span>
           </span>
           <div className="ratingBar">
             <div className="ratingBarInner sixthRating"></div>
