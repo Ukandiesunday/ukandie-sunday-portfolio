@@ -1,6 +1,7 @@
 import { RiMenu3Line } from "react-icons/ri";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { useTheme } from "../../contexts/themecontext/ThemeProvider";
+import { Link } from "react-scroll";
+// import { Link, animateScroll as scroll } from "react-scroll";
+// import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import "./navbar.scss";
 import { navLinks } from "./navLinks";
 import Button from "../button/Button";
@@ -10,8 +11,8 @@ import Logo from "../logo/Logo";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [link, setLink] = useState("");
-  const { theme, themeToggle } = useTheme();
-  console.log(theme);
+  // const { theme, themeToggle } = useTheme();
+  // console.log(theme);
 
   const toggleSideBar = () => {
     setIsOpen((prev) => !prev);

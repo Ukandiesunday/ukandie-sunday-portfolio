@@ -22,11 +22,12 @@ const Contact = () => {
     handleSubmit,
     register,
     reset,
-    formState: { errors, dirtyFields, isDirty },
+    formState: { errors, isDirty },
   } = useForm({ resolver: yupResolver(formSchema) });
 
   const handleFormSubmit = (data: DataType, e: any) => {
     e.preventDefault();
+    console.log(data);
     alert("Message has been sent");
     reset();
   };

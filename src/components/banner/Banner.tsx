@@ -2,16 +2,10 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaSass,
-  FaHtml5,
-  FaCss3,
-} from "react-icons/fa";
+import { FaSass, FaHtml5, FaCss3 } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 import "./banner.scss";
-import { BsGithub, BsSendCheck, BsTwitter } from "react-icons/bs";
+import { BsSendCheck } from "react-icons/bs";
 import { DiJavascript, DiReact } from "react-icons/di";
 import { BiDownload } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
