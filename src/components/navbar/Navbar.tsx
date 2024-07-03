@@ -1,4 +1,5 @@
-import { RiMenu3Line } from "react-icons/ri";
+import { HiMenuAlt4 } from "react-icons/hi";
+
 import { Link } from "react-scroll";
 
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
@@ -9,6 +10,7 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import Logo from "../logo/Logo";
 import ThemeToggle from "../themeToggle/ThemeToggle";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [link, setLink] = useState("");
@@ -44,7 +46,7 @@ const Navbar = () => {
 
           <div className="menuButton">
             <Button
-              icon={<RiMenu3Line className="menuIcon" />}
+              icon={<HiMenuAlt4 className="menuIcon" />}
               onClick={toggleSideBar}
             />
           </div>

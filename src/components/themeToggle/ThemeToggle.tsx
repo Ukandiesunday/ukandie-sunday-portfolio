@@ -1,7 +1,9 @@
 import "./styles.scss";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
+
 import { IoSunnyOutline } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
+
 const ThemeToggle = () => {
   const { theme, themeToggle } = useTheme();
   return (
