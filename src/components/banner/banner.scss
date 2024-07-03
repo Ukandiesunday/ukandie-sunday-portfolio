@@ -33,7 +33,6 @@
         font-family: Nunito Sans;
         font-weight: 900;
         font-size: 35px;
-
         font-family: Nunito Sans;
         text-transform: capitalize;
         span {
@@ -43,18 +42,17 @@
       .typeSkill {
         font-size: 30px;
         font-weight: 900;
+        text-transform: none;
       }
       .socialFlex {
         display: flex;
         align-items: center;
-
         gap: 30px;
         flex-wrap: wrap;
         .socialsContainer {
           h3 {
             font-size: 18px;
             font-weight: 500;
-
             font-size: 21px;
             font-weight: 600;
           }
