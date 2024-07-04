@@ -126,7 +126,12 @@ const Banner = () => {
         </div>
         <div className="bannerRight">
           <div className="profileImgContainer">
-            <img src="/images/uk.png" alt="" className="profileImage" />
+            <img
+              src="/images/uk.png"
+              alt="profile image"
+              loading="lazy"
+              className="profileImage"
+            />
           </div>
         </div>
       </div>
