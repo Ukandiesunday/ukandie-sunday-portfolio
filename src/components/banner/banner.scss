@@ -12,7 +12,7 @@
     .bannerLeftWrapper {
       display: flex;
       flex-direction: column;
-      gap: 37px;
+      gap: 40px;
 
       .welcomeMsg {
         font-size: 21px;
@@ -55,6 +55,7 @@
             font-size: 18px;
             font-weight: 500;
             font-size: 21px;
+            margin-bottom: 0px;
             font-weight: 600;
           }
 
@@ -86,6 +87,7 @@
             text-align: center;
             font-size: 21px;
             font-weight: 600;
+            margin-bottom: 0px;
           }
           .cvWrapper {
             margin-top: 12px;
@@ -124,6 +126,9 @@
         }
       }
       .toolsContainer {
+        h3 {
+          margin-bottom: 0px;
+        }
         @extend .socialsContainer;
         margin-top: 5px;
 
