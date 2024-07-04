@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <p>
           I am a passionate and agile Frontend developer, committed to crafting
-          stunning and engaging user-interfaces . <br />
+          stunning and engaging user-interfaces. <br />
           Specializes in translating static design mockups into interactive and
           responsive web pages while paying attention to detail. <br /> I have
           worked with a startup company where I learned how to set up quality

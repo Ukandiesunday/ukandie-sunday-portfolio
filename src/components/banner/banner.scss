@@ -12,7 +12,7 @@
     .bannerLeftWrapper {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
 
       .welcomeMsg {
         font-size: 21px;
@@ -29,22 +29,27 @@
         line-height: 26px;
         letter-spacing: 0.3px;
         font-weight: 500;
+        font-size: 16px;
       }
-      .name {
-        font-family: Nunito Sans;
-        font-weight: 900;
-        font-size: 35px;
-        font-family: Nunito Sans;
-        text-transform: capitalize;
-        span {
-          color: royalblue;
+      .nameContainer {
+        margin-bottom: -15px;
+        .name {
+          font-weight: 900;
+          font-size: 35px;
+
+          text-transform: capitalize;
+          span {
+            color: royalblue;
+          }
+        }
+
+        .typeSkill {
+          font-size: 30px;
+          font-weight: 900;
+          text-transform: none;
         }
       }
-      .typeSkill {
-        font-size: 30px;
-        font-weight: 900;
-        text-transform: none;
-      }
+
       .socialFlex {
         display: flex;
         align-items: center;
@@ -210,9 +215,11 @@
 
       .bannerLeftWrapper {
         gap: 37px;
-        .name,
-        .typeWriter {
-          font-size: 25px;
+        .nameContainer {
+          .name,
+          .typeWriter {
+            font-size: 25px;
+          }
         }
         .welcomeMsg {
           font-size: 25px;

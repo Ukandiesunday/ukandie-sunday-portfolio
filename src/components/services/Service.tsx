@@ -30,9 +30,9 @@ const Service = () => {
             <h2>Web development</h2>
             <p>
               I build websites from scratch, ensuring websites are
-              mobile-friendly and cross-browser compatible. Optimize codes for
-              seamless performance, Knowledgeable in Git and GitHub for code
-              management and collaboration. .
+              mobile-friendly and cross-browser compatible. Optimize codes and
+              incorporate best practices for seamless performance, Knowledgeable
+              in Git and GitHub for code management and collaboration.
             </p>
           </div>
 
@@ -44,8 +44,8 @@ const Service = () => {
               with adequate error handling, experienced in NodeJs, MongoDB, etc.
               Enabling seamless data exchange between front-end and back-end
               systems. Ensure secure API communication by implementing
-              authentication mechanisms like OAuth and JWT, protecting sensitive
-              data and maintaining user privacy.
+              authentication mechanisms, manage user session with JWT, protect
+              routes and maintain user privacy.
             </p>
           </div>
         </div>

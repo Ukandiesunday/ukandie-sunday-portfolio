@@ -36,7 +36,7 @@ const Banner = () => {
                 className="MobileProfileImg"
               />
             </div>
-            <div>
+            <div className="nameContainer">
               <h2 className="name">
                 Hi, I'm <span>Ukandie Sunday</span>
               </h2>
@@ -56,7 +56,7 @@ const Banner = () => {
                 <div className="cvWrapper">
                   <a
                     target="_blank"
-                    href="/images/ukandieSundayCv.pdf"
+                    href="/images/ukandieSunday.pdf"
                     download
                     className="cv"
                   >
