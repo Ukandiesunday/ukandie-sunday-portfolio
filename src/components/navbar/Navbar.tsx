@@ -19,7 +19,7 @@ const Navbar = () => {
   const toggleSideBar = () => {
     setIsOpen((prev) => !prev);
   };
-  console.log(isOpen);
+
   return (
     <div className={`navbar ${theme === "light" ? "light" : "dark"}`}>
       <div className="navWrapper">
