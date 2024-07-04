@@ -10,24 +10,21 @@ import Service from "./components/services/Service";
 import Preloader from "./components/preloader/Preloader";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const handleWindowLoad = () => {
+    setLoading(true);
+    const timeOutId = setTimeout(() => {
       setLoading(false);
-    };
+    }, 2000);
 
-    // Add event listener for window load
-    window.addEventListener("load", handleWindowLoad);
-
-    // Clean up event listener on component unmount
     return () => {
-      window.removeEventListener("load", handleWindowLoad);
+      clearTimeout(timeOutId);
     };
   }, []);
 
   if (loading) {
-    return <Preloader />;
+    return <Preloader loading={loading} />;
   }
 
   return (
