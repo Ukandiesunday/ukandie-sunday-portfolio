@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
   .resume {
     text-align: center;
-
+    padding-inline: 15px;
     .resumeTapsContainer {
       overflow-x: scroll;
     }
@@ -85,6 +85,7 @@
         .details {
           max-width: 100%;
           text-align: left;
+          line-height: 30px;
         }
       }
     }

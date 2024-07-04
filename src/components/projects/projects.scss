@@ -19,6 +19,7 @@
         p {
           // font-weight: 500;
           line-height: 26px;
+          font-size: 16px;
         }
         .imgWrapper {
           border-radius: 10px;
@@ -62,8 +63,14 @@
     .cardContainer {
       .projectCards {
         background: #1c1e26 !important;
-        box-shadow: 0px 2px 5px rgb(1, 1, 9);
+        box-shadow: 2px 2px 5px rgb(1, 1, 9);
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding-inline: 15px;
   }
 }

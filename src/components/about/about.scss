@@ -14,9 +14,14 @@
 
 @media (max-width: 768px) {
   .aboutContainer {
+    padding-inline: 15px;
     .aboutSection {
       h3 {
         font-size: 30px;
+      }
+
+      p {
+        line-height: 30px;
       }
     }
   }
