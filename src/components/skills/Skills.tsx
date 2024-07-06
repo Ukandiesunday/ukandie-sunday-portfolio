@@ -4,7 +4,7 @@ import "./skills.scss";
 const Skills = () => {
   return (
     <div className="skillsContainer">
-      <Title title={"My Professional Skills"} />
+      <Title title={"My Technical Skills"} />
 
       <div className="skillsWrapper">
         <div className="skills">
