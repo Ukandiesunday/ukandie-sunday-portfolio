@@ -8,6 +8,8 @@ import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Service from "./components/services/Service";
 import Preloader from "./components/preloader/Preloader";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -39,6 +41,7 @@ function App() {
         <Contact />
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import { MdMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import Title from "../title/Title";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
-
+import { toast } from "react-toastify";
 type DataType = {
   firstName: string;
   lastName: string;
@@ -21,6 +21,7 @@ type DataType = {
 };
 const Contact = () => {
   const { theme } = useTheme();
+
   const {
     handleSubmit,
     register,
@@ -30,8 +31,9 @@ const Contact = () => {
 
   const handleFormSubmit = (data: DataType, e: any) => {
     e.preventDefault();
-    console.log(data);
-    alert("Message has been sent");
+    if (data) {
+      toast.success("Message sent successfully !");
+    }
     reset();
   };
 

@@ -31,7 +31,7 @@ const Banner = () => {
             <h3 className="welcomeMsg">Welcome to my portfolio</h3>
             <div className="MobileProfileImgContainer ">
               <img
-                src="/images/ukandie1.jpg"
+                src="/images/ukProfile.jpg"
                 alt=""
                 className="MobileProfileImg"
               />
@@ -127,7 +127,7 @@ const Banner = () => {
         <div className="bannerRight">
           <div className="profileImgContainer">
             <img
-              src="/images/uk.png"
+              src="/images/ukProfile1.jpg "
               alt="profile image"
               loading="lazy"
               className="profileImage"

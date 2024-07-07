@@ -88,6 +88,9 @@
         border: 1px solid #cbd1da;
         border-radius: 10px;
         outline: none;
+        &:focus {
+          border: 1px solid royalblue !important;
+        }
       }
       .error {
         font-weight: 500;
