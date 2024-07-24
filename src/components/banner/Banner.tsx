@@ -1,7 +1,8 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import profileImg from "../../assets/images/profileImg.png";
+import profileImgMobile from "../../assets/images/profileMobile.png";
 import { FaSass, FaHtml5, FaCss3 } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 import "./banner.scss";
@@ -30,11 +31,7 @@ const Banner = () => {
           <div className="bannerLeftWrapper">
             <h3 className="welcomeMsg">Welcome to my portfolio</h3>
             <div className="MobileProfileImgContainer ">
-              <img
-                src="/images/profileMobile.png"
-                alt=""
-                className="MobileProfileImg"
-              />
+              <img src={profileImgMobile} alt="" className="MobileProfileImg" />
             </div>
             <div className="nameContainer">
               <h2 className="name">
@@ -127,7 +124,7 @@ const Banner = () => {
         <div className="bannerRight">
           <div className="profileImgContainer">
             <img
-              src="/images/profileImg.png "
+              src={profileImg}
               alt="profile image"
               loading="lazy"
               className="profileImage"

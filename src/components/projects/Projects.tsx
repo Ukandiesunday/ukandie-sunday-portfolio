@@ -1,3 +1,9 @@
+import blogimg from "../../assets/images/blog.png";
+import moregift from "../../assets/images/moregift.png";
+import carShop from "../../assets/images/ecom.png";
+import furniture from "../../assets/images/furn.png";
+import shop from "../../assets/images/ecom2.png";
+
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import Title from "../title/Title";
 import "./projects.scss";
@@ -18,15 +24,11 @@ const Projects = () => {
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img
-                className="img"
-                src="/images/ecom.png"
-                alt="ecommerce photo"
-              />
+              <img className="img" src={carShop} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
               <h4>E-commerce website</h4>
-              <a href="https://car-store-fawn.vercel.app" className="link">
+              <a href="https://car-shop-flame.vercel.app/" className="link">
                 <BiLink />
               </a>
             </div>
@@ -40,11 +42,7 @@ const Projects = () => {
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img
-                className="img"
-                src="/images/moregift.png"
-                alt="ecommerce photo"
-              />
+              <img className="img" src={moregift} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
               <h4>Fintech Website</h4>
@@ -60,11 +58,7 @@ const Projects = () => {
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img
-                className="img"
-                src="/images/blog.png"
-                alt="ecommerce photo"
-              />
+              <img className="img" src={blogimg} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
               <h4>Blog website</h4>
@@ -81,11 +75,7 @@ const Projects = () => {
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img
-                className="img"
-                src="/images/furn.png"
-                alt="ecommerce photo"
-              />
+              <img className="img" src={furniture} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
               <h4>Furniture website</h4>
@@ -102,11 +92,7 @@ const Projects = () => {
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img
-                className="img"
-                src="/images/ecom2.png"
-                alt="ecommerce photo"
-              />
+              <img className="img" src={shop} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
               <h4>E-commerce website</h4>

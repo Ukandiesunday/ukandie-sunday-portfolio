@@ -1,7 +1,7 @@
 import Input from "../Input/Input";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
+import contactImg from "../../assets/images/contactImg.png";
 import "./contact.scss";
 import { formSchema } from "../../formSchema/formSchema";
 import Button from "../button/Button";
@@ -52,11 +52,7 @@ const Contact = () => {
             business.
           </p>
           <div className="imgContainer ">
-            <img
-              src="/images/contactImg.png"
-              alt="contactImg"
-              className="img"
-            />
+            <img src={contactImg} alt="contactImg" className="img" />
           </div>
 
           <div className="phone ">
