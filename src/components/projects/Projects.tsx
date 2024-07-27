@@ -1,6 +1,6 @@
 import blogimg from "../../assets/images/blog.png";
-import moregift from "../../assets/images/moregift.png";
-import carShop from "../../assets/images/ecom.png";
+import moregift from "../../assets/images/moregift-img.png";
+import carShop from "../../assets/images/car-shop-portrait.png";
 import furniture from "../../assets/images/furn.png";
 import shop from "../../assets/images/ecom2.png";
 
@@ -28,13 +28,16 @@ const Projects = () => {
             </div>
             <div className="linkContainer">
               <h4>E-commerce website</h4>
-              <a href="https://car-shop-flame.vercel.app/" className="link">
+              <a
+                href="https://https://donald-car-shop-flame.vercel.app/"
+                className="link"
+              >
                 <BiLink />
               </a>
             </div>
             <p>
-              In this website you can sort and filter cars, check different cars
-              views, add to cart, view dynamic related cars and buy,etc.
+              This website allows users to purchase cars,add to cart, various
+              navigation views, user authentication,etc
             </p>
           </div>
         </div>
@@ -52,6 +55,7 @@ const Projects = () => {
             </div>
             <p>
               This website offers financial services, informative and educating.
+              Real-time updates on financial products.
             </p>
           </div>
         </div>
@@ -67,8 +71,8 @@ const Projects = () => {
               </a>
             </div>
             <p>
-              In this website, blog posts are fetched from the API, search
-              blogs, read dynamic related posts, check weather,etc.
+              In this website, you stay informed and entertained. Check latest
+              weather and dive deeper into single posts details.
             </p>
           </div>
         </div>
@@ -85,7 +89,7 @@ const Projects = () => {
             </div>
             <p>
               This is a furniture website built with pure html, css and
-              JavaScript, here you can filter furniture by category.
+              JavaScript, here you can filter furniture by category and more.
             </p>
           </div>
         </div>

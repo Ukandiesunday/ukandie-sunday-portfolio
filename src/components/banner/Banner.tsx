@@ -1,9 +1,11 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import profileImg from "../../assets/images/profileImg.png";
-import profileImgMobile from "../../assets/images/profileMobile.png";
-import { FaSass, FaHtml5, FaCss3 } from "react-icons/fa";
+import profileImg from "../../assets/images/ukedited3.png";
+import profileImgMobile from "../../assets/images/ukedited3.png";
+import { FaGithub } from "react-icons/fa";
+
+import { FaSass, FaHtml5, FaCss3, FaJira } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 import "./banner.scss";
 import { BsSendCheck } from "react-icons/bs";
@@ -44,16 +46,17 @@ const Banner = () => {
             </div>
             <p className="desc">
               {" "}
-              I am a creative and agile frontend developer with over two(2)
-              years experience building and deploying fully functional websites.
+              I am a passionate Front End Developer with over two years of
+              experience building resilient web applications. My expertise lies
+              in creating responsive and user-friendly websites.
             </p>
             <div className="socialFlex">
               <div className="cvContainer">
-                <h3>Check out</h3>
+                <h3>Download</h3>
                 <div className="cvWrapper">
                   <a
                     target="_blank"
-                    href="/images/UkandieSundayResume2.pdf"
+                    href="/images/ukandie-sunday.cvo.pdf"
                     download
                     className="cv"
                   >
@@ -64,7 +67,7 @@ const Banner = () => {
               </div>
               <SocialLinks header={"find me on"} />
               <div className="cvContainer">
-                <h3>Connect</h3>
+                <h3>Hire me</h3>
                 <div className="cvWrapper sendMail">
                   <a
                     target="_blank"
@@ -79,44 +82,52 @@ const Banner = () => {
             </div>
 
             <div className="toolsContainer">
-              <h3>My technology stacks</h3>
+              <h3>My skills and tools</h3>
               <div
                 className={`skillsWrapper ${
                   theme === "light" ? "light" : "dark"
                 }`}
               >
-                <span className="skills">
+                <div className="skills">
                   <FaHtml5 className="icon" />
                   Html5
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
                   <FaCss3 className="icon" />
                   Css3
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
                   <DiJavascript className="icon" />
                   Js
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
                   <DiReact className="icon" />
                   React
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
                   <SiNextdotjs className="icon" />
                   Next.js
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
                   <FaSass className="icon" />
                   Sass
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
                   <SiTailwindcss className="icon" />
                   Tailwind
-                </span>
-                <span className="skills">
+                </div>
+                <div className="skills">
+                  <FaJira className="icon" />
+                  Jira
+                </div>
+                <div className="skills">
                   <SiFigma className="icon" />
                   Figma
-                </span>
+                </div>
+                <div className="skills">
+                  <FaGithub className="icon" />
+                  <span style={{ textAlign: "center" }}>Git & GitHub</span>
+                </div>
               </div>
             </div>
           </div>

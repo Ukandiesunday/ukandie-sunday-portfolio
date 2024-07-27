@@ -1,6 +1,6 @@
 import { animateScroll as scroll } from "react-scroll";
 import "./logo.scss";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/ukedited3.png";
 const Logo = () => {
   return (
     <a href={"#"}>

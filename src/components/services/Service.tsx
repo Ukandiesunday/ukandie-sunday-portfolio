@@ -17,10 +17,12 @@ const Service = () => {
         <Title title={"What I Do"} />
 
         <p>
-          I build websites from scratch, update existing websites, optimize code
-          for seamless SEO, translate design wireframes into actual code,
-          integrate Restful APIs, implement authentication systems, create
-          seamless UX and apply SEO principles.
+          Build websites from scratch, Update and maintain existing websites,
+          Optimize code for performance and faster load times, Translate design
+          wire frames into functional and interactive code, Integrate RESTful
+          APIs for website capabilities, Implement authentication systems,
+          Create seamless user experiences, Apply SEO best practices to improve
+          visibility and ranking in search engines.
         </p>
       </div>
       <div className="serviceCards">
@@ -41,7 +43,7 @@ const Service = () => {
             <h2>APIs integration</h2>
             <p>
               I Integrate RESTful APIs to enhance web application functionality
-              with adequate error handling, experienced in NodeJs, MongoDB, etc.
+              with adequate error handling, experience in NodeJs, MongoDB, etc.
               Enabling seamless data exchange between front-end and back-end
               systems. Ensure secure API communication by implementing
               authentication mechanisms, manage user session with JWT, protect
@@ -58,7 +60,8 @@ const Service = () => {
               improve search engine visibility. Enhance readability and user
               engagement. Ensure best practices for site speed,
               mobile-friendliness, and secure (HTTPS) protocols. Utilize tools
-              like Google Lighthouse to identify issues and fixes.
+              like Google Lighthouse, devtools, cypress to identify issues and
+              fixes.
             </p>
           </div>
 
@@ -70,8 +73,8 @@ const Service = () => {
               interactive web pages while maintaining a consistent user
               experience across various devices and screen sizes. Work closely
               with design teams to convert Figma designs, Sketch files into
-              precise and pixel-perfect web pages. Ensure that the final product
-              accurately matches the original design specifications.
+              precise and pixel-perfect web pages. Ensuring meticulous attention
+              to detail.
             </p>
           </div>
         </div>

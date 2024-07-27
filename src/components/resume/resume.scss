@@ -38,6 +38,7 @@
   }
   .resumeBottom {
     margin-top: 20px;
+
     .content {
       display: none;
       &.activeContent {
@@ -56,6 +57,11 @@
         flex-direction: column;
         gap: 10px;
         max-width: 80%;
+        .internDate {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
       }
       .contentEdu {
         @extend .details;

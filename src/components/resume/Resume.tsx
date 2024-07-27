@@ -32,50 +32,75 @@ const Resume = () => {
         <div className={`content ${taps === 0 && "activeContent"}`}>
           <h4>Work Experience</h4>
           <div className="details">
+            <div>
+              <h5>Moregift company (Start-up) : Remote</h5>
+              <div className="internDate">
+                <h5>Front End Developer (Intern)</h5>
+                <span>Jan. 2024 - June 2024</span>
+              </div>
+              <p>Moregift offers financial services</p>
+            </div>
             <p>
-              • I worked with a startup company (moregift) where I built her
-              website from scratch, collaborated in building the organization
-              dashboard from the ground up.
+              • Assisted in the development of web applications by writing
+              clean, modular, and maintainable code using HTML, CSS, and
+              JavaScript
             </p>
             <p>
-              • Translated (moregift) several email templates on figma into
-              functional interfaces.
+              • Utilized frameworks and libraries such as React and Redux to
+              build efficient and scalable web solutions. Documented development
+              processes, code changes, and project progress to ensure clear
+              communication within the team.
             </p>
             <p>
-              • Synchronized with design and backend teams to integrate frontend
-              elements and backend logics effectively.
+              • Supported senior developers in building complex features and
+              troubleshooting issues within the codebase
             </p>
             <p>
-              • I gained hands-on experience working with different clients' and
-              personal projects such as organization dashboard, e-commerce
-              website, blog website, portfolio website, Fintech website,
-              integration of authentication system and RESTful APIs etc.
+              • Collaborated with designers and backend developers to implement
+              new features and optimize existing ones, ensuring seamless
+              integration.
             </p>
-            <p> • Updated IndexPro website (freelancing)</p>
+            <p>
+              • Implemented best practices for web performance optimization,
+              including SEO principles, lazy loading, and caching strategies.
+            </p>
+            <p>
+              • Conducted thorough testing and debugging of web applications to
+              ensure cross-browser compatibility and responsiveness across
+              various devices. Experienced with backend technologies such as
+              Nodejs, Python, MongoDB and RESTfull APIs.
+            </p>
+            <p>
+              • Maintained version control using Git and GitHub. Participated in
+              daily stand-up meetings, contributing to agile development
+              processes and team collaboration. Good experience in setting up
+              and configuring webpacks, babel and node package manager (npm).
+            </p>
           </div>
         </div>
         <div className={`content ${taps === 1 && "activeContent"}`}>
           <h4>Education</h4>
           <div className="contentEdu">
-            <h5>College of technology Akwa Ibom State</h5>
-            <p>
-              Diploma in Computer Science (Associate Programme), Computer
-              Science
-            </p>
-            <span>Jan 2022 {""}- Aug 2023 </span>
+            <h5>
+              Akwa Ibom College of Science and Technology, Nnung Ukim Ikono,
+              Nigeria.
+            </h5>
+            <p>Diploma computer science (Associate).</p>
+            <span> 2022 {""}- 2023 </span>
           </div>
           <div className="contentEdu">
             <h5>
-              AkanuIbiam Federal Polytechnic Unwana, Ebonyi State ,Nigeria
+              Federal University of Ndufu Alike(AE-FUNAI), Ebonyi State,
+              Nigeria.
             </h5>
-            <p>Higher National Diploma, Accounting</p>
+            <p>Bachelor's Degree in Accounting.,</p>
             <span>Feb 2017 {""}- March 2021 </span>
           </div>
-          <div className="contentEdu">
+          {/* <div className="contentEdu">
             <h5>National youth Service Corps (NYSC)</h5>
 
             <span>Feb 2022 - feb 2023 </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
