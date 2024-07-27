@@ -1,9 +1,8 @@
 import blogimg from "../../assets/images/blog.png";
 import moregift from "../../assets/images/moregift-img.png";
-import carShop from "../../assets/images/car-shop-portrait.png";
+import carShop from "../../assets/images/doncars.png";
 import furniture from "../../assets/images/furn.png";
 import shop from "../../assets/images/ecom2.png";
-
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import Title from "../title/Title";
 import "./projects.scss";
