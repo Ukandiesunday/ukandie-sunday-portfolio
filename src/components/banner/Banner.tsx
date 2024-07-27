@@ -19,7 +19,12 @@ const Banner = () => {
   const { theme } = useTheme();
   // for typing
   const [text] = useTypewriter({
-    words: ["Frontend developer.", "React developer.", "Next.js developer."],
+    words: [
+      "Frontend developer.",
+      "Email developer.",
+      "React developer.",
+      "Next.js developer.",
+    ],
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 20,
