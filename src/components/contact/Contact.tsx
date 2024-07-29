@@ -6,12 +6,14 @@ import "./contact.scss";
 import { formSchema } from "../../formSchema/formSchema";
 import Button from "../button/Button";
 import { BsWhatsapp } from "react-icons/bs";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { MdMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import Title from "../title/Title";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
-import { toast } from "react-toastify";
+import { useState } from "react";
+import { accessKey } from "../../store/store";
 type DataType = {
   firstName: string;
   lastName: string;
@@ -20,21 +22,57 @@ type DataType = {
   message: string;
 };
 const Contact = () => {
+  const [isLoading, setLoading] = useState(false);
   const { theme } = useTheme();
+
+  // const { firstName, lastName } = useWatch({
+  //   control,
+  //   name: ["firstName", "lastName"],
+  //   defaultValue: {
+  //     firstName: "",
+  //     lastName: "",
+  //   },
+  // });
+
+  // // Determine if the button should be enabled
+  // const isButtonDisabled = !firstName || !lastName;
 
   const {
     handleSubmit,
     register,
     reset,
+
     formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
 
-  const handleFormSubmit = (data: DataType, e: any) => {
+  const handleFormSubmit = async (formData: DataType, e: any) => {
     e.preventDefault();
-    if (data) {
-      toast.success("Message sent successfully !");
+
+    console.log(formData);
+    try {
+      setLoading(true);
+      const json = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData, null, 2),
+      }).then((response) => response.json());
+      console.log(json);
+      if (json.success) {
+        console.log(json);
+        toast.success("Message sent successfully");
+        reset();
+        setLoading(false);
+      }
+    } catch (error: any) {
+      if (error) {
+        console.log(error);
+
+        setLoading(false);
+      }
     }
-    reset();
   };
 
   return (
@@ -80,6 +118,12 @@ const Contact = () => {
             action=""
             className="form"
           >
+            <input
+              type="hidden"
+              {...register("access_key")}
+              value={accessKey}
+            />
+
             <div className="inputDivider">
               <Input
                 placeholder={"First name"}
@@ -128,10 +172,16 @@ const Contact = () => {
                 <p className="error">{errors.message.message}</p>
               )}
             </div>
-            <Button type={"submit"} label="Send" className={"btnBgcolor"} />
+            <Button
+              type={"submit"}
+              label={isLoading ? "Processing..." : "Send request"}
+              disabled={isLoading}
+              className={"btnBgcolor"}
+            />
           </form>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

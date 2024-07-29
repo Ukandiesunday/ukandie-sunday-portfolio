@@ -61,7 +61,7 @@ const Banner = () => {
                 <div className="cvWrapper">
                   <a
                     target="_blank"
-                    href="/images/ukandie-sunday.cvo.pdf"
+                    href="/images/ukandie-sunday.cvR1.pdf"
                     download
                     className="cv"
                   >

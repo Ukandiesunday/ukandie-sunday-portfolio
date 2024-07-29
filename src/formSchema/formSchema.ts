@@ -13,4 +13,5 @@ export const formSchema = yup.object().shape({
     .matches(/^[0-9]{11}$/, "Invalid phone number"),
 
   message: yup.string().required("Message is required"),
+  access_key: yup.string(),
 });

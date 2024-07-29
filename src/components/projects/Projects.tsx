@@ -2,7 +2,7 @@ import blogimg from "../../assets/images/blog.png";
 import moregift from "../../assets/images/moregift-img.png";
 import carShop from "../../assets/images/doncars.png";
 import furniture from "../../assets/images/furn.png";
-import shop from "../../assets/images/ecom2.png";
+import blog from "../../assets/images/css-blog.png";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import Title from "../title/Title";
 import "./projects.scss";
@@ -82,30 +82,33 @@ const Projects = () => {
             </div>
             <div className="linkContainer">
               <h4>Furniture website</h4>
-              <a href="https://ukandie-furniture.vercel.app/" className="link">
+              <a href="https://anie-sons-furnitur.vercel.app/" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              This is a furniture website built with pure html, css and
-              JavaScript, here you can filter furniture by category and more.
+              This furniture website, built with HTML, CSS, and JavaScript,
+              allows users to filter furniture by category and more.
             </p>
           </div>
         </div>
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img className="img" src={shop} alt="ecommerce photo" />
+              <img className="img" src={blog} alt="css blog photo" />
             </div>
             <div className="linkContainer">
-              <h4>E-commerce website</h4>
-              <a href="https://ukandie-shop.vercel.app/" className="link">
+              <h4>Art & Design blog</h4>
+              <a
+                href="https://blog-landingpage-sage.vercel.app/"
+                className="link"
+              >
                 <BiLink />
               </a>
             </div>
             <p>
-              An e-commerce website built with pure html, css and JavaScript.
-              Here you can add to cart, and view single product.
+              This landing page, built with HTML and CSS, keeps users informed
+              about art and design work.
             </p>
           </div>
         </div>

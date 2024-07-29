@@ -10,10 +10,7 @@
     margin-top: 20px;
     color: white;
     transition: background-color 0.5s ease;
-    &:hover {
-      background-color: #fff;
-      color: inherit;
-    }
+
     &:disabled {
       background-color: rgb(196, 194, 194);
       cursor: not-allowed;

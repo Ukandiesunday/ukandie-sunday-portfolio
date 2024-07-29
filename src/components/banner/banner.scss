@@ -131,11 +131,11 @@
         }
       }
       .toolsContainer {
+        @extend .socialsContainer;
+        margin-top: 5px;
         h3 {
           margin-bottom: 0px;
         }
-        @extend .socialsContainer;
-        margin-top: 5px;
 
         h3 {
           font-size: 22px;
@@ -185,7 +185,7 @@
   flex-basis: 50%;
 
   .profileImgContainer {
-    height: 650px;
+    height: 700px;
   }
   .profileImage {
     width: 100%;

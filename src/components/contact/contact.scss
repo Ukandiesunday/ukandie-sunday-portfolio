@@ -57,13 +57,14 @@
       }
     }
     .contactRight {
+      flex-basis: 70%;
       h3 {
         font-size: 25px;
         margin-bottom: 20px;
 
         width: fit-content;
       }
-      flex-basis: 70%;
+
       .form {
         .inputDivider {
           display: flex;
@@ -73,13 +74,14 @@
       }
     }
     .textAreaContainer {
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 5px;
       label {
         margin-bottom: 4px;
       }
-      width: 100%;
+
       textarea {
         width: 100%;
         padding: 10px 15px;
