@@ -1,6 +1,6 @@
 import blogimg from "../../assets/images/blog.png";
 import moregift from "../../assets/images/moregift-img.png";
-import carShop from "../../assets/images/doncars.png";
+import carShop from "../../assets/images/ecom-don.png";
 import furniture from "../../assets/images/furn.png";
 import blog from "../../assets/images/css-blog.png";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";

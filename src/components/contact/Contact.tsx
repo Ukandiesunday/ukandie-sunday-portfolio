@@ -48,7 +48,6 @@ const Contact = () => {
   const handleFormSubmit = async (formData: DataType, e: any) => {
     e.preventDefault();
 
-    console.log(formData);
     try {
       setLoading(true);
       const json = await fetch("https://api.web3forms.com/submit", {
@@ -59,9 +58,8 @@ const Contact = () => {
         },
         body: JSON.stringify(formData, null, 2),
       }).then((response) => response.json());
-      console.log(json);
+
       if (json.success) {
-        console.log(json);
         toast.success("Message sent successfully");
         reset();
         setLoading(false);
