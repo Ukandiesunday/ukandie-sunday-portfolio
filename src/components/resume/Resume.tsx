@@ -41,40 +41,45 @@ const Resume = () => {
               <p>Moregift offers financial services</p>
             </div>
             <p>
-              • Assisted in the development of web applications by writing
-              clean, modular, and maintainable code using HTML, CSS, and
-              JavaScript
+              • Developed and designed web applications by writing efficient,
+              modular, and maintainable code using HTML, CSS, and JavaScript
             </p>
             <p>
-              • Utilized frameworks and libraries such as React and Redux to
-              build efficient and scalable web solutions. Documented development
-              processes, code changes, and project progress to ensure clear
-              communication within the team.
+              • Built and maintained web applications using frontend frameworks
+              like React.js and Next.js for scalability.
             </p>
             <p>
-              • Supported senior developers in building complex features and
-              troubleshooting issues within the codebase
+              • Documented development processes, code changes, and project
+              progress to ensure clear communication within the team.
             </p>
             <p>
-              • Collaborated with designers and backend developers to implement
-              new features and optimize existing ones, ensuring seamless
-              integration.
+              • Collaborated with senior developers in building complex features
+              and troubleshooting issues within the codebase.
+            </p>
+            <p>
+              • Worked with designers and backend developers to implement new
+              features and optimize existing ones.
             </p>
             <p>
               • Implemented best practices for web performance optimization,
               including SEO principles, lazy loading, and caching strategies.
             </p>
             <p>
-              • Conducted thorough testing and debugging of web applications to
-              ensure cross-browser compatibility and responsiveness across
-              various devices. Experienced with backend technologies such as
-              Nodejs, Python, MongoDB and RESTfull APIs.
+              • Tested and debugged web applications to ensure cross-browser
+              compatibility and responsiveness across various devices.
             </p>
             <p>
-              • Maintained version control using Git and GitHub. Participated in
-              daily stand-up meetings, contributing to agile development
-              processes and team collaboration. Good experience in setting up
-              and configuring webpacks, babel and node package manager (npm).
+              • Experienced with backend technologies such as Nodejs, Python,
+              MongoDB and RESTfull APIs.
+            </p>
+            <p>• Maintained version control using Git and GitHub.</p>
+            <p>
+              • Participated in daily stand-up meetings, contributing to agile
+              development processes and team collaboration
+            </p>
+            <p>
+              • Skilled in setting up and configuring webpacks, babel, Eslint
+              and node package manager (npm).
             </p>
           </div>
         </div>

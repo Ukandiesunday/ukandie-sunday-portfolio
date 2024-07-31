@@ -94,7 +94,7 @@ const Contact = () => {
           <div className="phone ">
             <a className="phoneLink" href="tel:+2349137347328">
               {" "}
-              call:{""} +2349137347328
+              call:{""} +2349053588942
             </a>
           </div>
           <div className="mailContainer ">
@@ -172,7 +172,7 @@ const Contact = () => {
             </div>
             <Button
               type={"submit"}
-              label={isLoading ? "Processing..." : "Send request"}
+              label={isLoading ? "Processing..." : "Send response"}
               disabled={isLoading}
               className={"btnBgcolor"}
             />
