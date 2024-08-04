@@ -61,7 +61,7 @@ const Service = () => {
               engagement. Ensure best practices for site speed,
               mobile-friendliness, and secure (HTTPS) protocols. Utilize tools
               like Google Lighthouse, devtools, cypress to identify issues and
-              fixes.
+              fixes. Aspiring Quality Assurance Engineer.
             </p>
           </div>
 

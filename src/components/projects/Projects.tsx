@@ -1,6 +1,6 @@
 import blogimg from "../../assets/images/blog.png";
 import moregift from "../../assets/images/moregift-img.png";
-import carShop from "../../assets/images/ecom-don.png";
+import carShop from "../../assets/images/newcar.png";
 import furniture from "../../assets/images/furn.png";
 import blog from "../../assets/images/css-blog.png";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
@@ -28,7 +28,7 @@ const Projects = () => {
             <div className="linkContainer">
               <h4>E-commerce website</h4>
               <a
-                href="https://https://donald-car-shop-flame.vercel.app/"
+                href="https://donald-car-shop-flame.vercel.app/"
                 className="link"
               >
                 <BiLink />
@@ -40,24 +40,6 @@ const Projects = () => {
             </p>
           </div>
         </div>
-
-        <div className="projectCards">
-          <div className="cardContentCols">
-            <div className="imgWrapper">
-              <img className="img" src={moregift} alt="ecommerce photo" />
-            </div>
-            <div className="linkContainer">
-              <h4>Fintech Website</h4>
-              <a href="https://moregift.app/home" className="link">
-                <BiLink />
-              </a>
-            </div>
-            <p>
-              This website offers financial services, informative and educating.
-              Real-time updates on financial products.
-            </p>
-          </div>
-        </div>
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
@@ -65,7 +47,7 @@ const Projects = () => {
             </div>
             <div className="linkContainer">
               <h4>Blog website</h4>
-              <a href="https://modern-blog-umber.vercel.app" className="link">
+              <a href="https://u-blog-gist.vercel.app/" className="link">
                 <BiLink />
               </a>
             </div>
@@ -75,6 +57,24 @@ const Projects = () => {
             </p>
           </div>
         </div>
+        <div className="projectCards">
+          <div className="cardContentCols">
+            <div className="imgWrapper">
+              <img className="img" src={moregift} alt="ecommerce photo" />
+            </div>
+            <div className="linkContainer">
+              <h4>Financial portal Website.</h4>
+              <a href="https://moregift.vercel.app/home" className="link">
+                <BiLink />
+              </a>
+            </div>
+            <p>
+              This website offers financial services, informative and educating.
+              Real-time updates on financial products.
+            </p>
+          </div>
+        </div>
+
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
