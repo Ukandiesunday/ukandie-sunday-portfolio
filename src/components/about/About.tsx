@@ -15,10 +15,10 @@ const About = () => {
         <p>
           I am a passionate Front End Developer with a knack for crafting
           stunning and engaging user interfaces. With over two years of
-          experience, I excel at translating static designs into interactive,
+          experience, I excel at translating design mockups into interactive,
           responsive web pages with meticulous attention to detail. During my
           internship at Moregift, I honed my skills in project setup, time
-          management, and writing clean, maintainable code. I thrive in
+          management, writing clean and maintainable code. I thrive in
           collaborative settings, effectively partnering with design and backend
           teams to implement features and solve complex challenges. With strong
           communication, problem-solving, and analytical abilities, I am eager

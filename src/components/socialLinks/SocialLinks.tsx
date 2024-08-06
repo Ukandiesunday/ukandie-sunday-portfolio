@@ -27,7 +27,7 @@ const SocialLinks = ({ header, className }: SocialLinksProp) => {
             <BsTwitter className="icon" />
           </a>
           <a
-            href="https://github.com/Ukandiesunday"
+            href="https://github.com/Ukandiesunday/?tab=repositories"
             className={` socialMediaLinks ${className}`}
           >
             <BsGithub className="icon" />
