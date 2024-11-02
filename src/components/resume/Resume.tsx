@@ -30,57 +30,95 @@ const Resume = () => {
       </div>
       <div className="resumeBottom">
         <div className={`content ${taps === 0 && "activeContent"}`}>
-          <h4>Work Experience</h4>
-          <div className="details">
-            <div>
-              <h5>Moregift company (Start-up) : Remote</h5>
-              <div className="internDate">
-                <h5>Front End Developer (Intern)</h5>
-                <span>Jan. 2024 - June 2024</span>
+          <h4 className="work-experience-h4">Work Experience</h4>
+          <div className="details-wrapper">
+            <ul className="details">
+              <li>
+                <h5>MOREGIFT COMPANY | Canada (Start-up) : Remote</h5>
+                <div className="internDate">
+                  <h5>Front End Developer (Intern)</h5>
+                  <span>Jan. 2024 - June 2024</span>
+                </div>
+                <p>Moregift offers financial services</p>
+              </li>
+              <li>
+                • Developed responsive and user-friendly web applications using
+                HTML, CSS, JavaScript, React.js, Next.js, etc.
+              </li>
+              <li>
+                • Translated designs on figma to clean, maintainable and
+                functional code.
+              </li>
+              <li>• Documented development processes and project progress.</li>
+              <li>
+                • Assisted in building complex features and troubleshooting
+                issues within the code base with constructive feed backs.
+              </li>
+              <li>
+                • Collaborated seamlessly with design and backend teams to
+                integrate frontend features.
+              </li>
+              <li>
+                • Implemented best practices for web performance optimization,
+                including SEO principles, lazy loading, and caching strategies.
+              </li>
+              <li>
+                • Tested and debugged web applications to ensure cross-browser
+                compatibility and responsiveness across various devices.
+              </li>
+              <li>
+                • Experienced with backend technologies such as Nodejs, Python,
+                MongoDB and RESTfull APIs.
+              </li>
+              <li>• Maintained version control using Git and GitHub.</li>
+              <li>
+                • Participated in daily stand-up meetings, contributing to agile
+                development processes and team collaboration
+              </li>
+              <li>
+                • Built numerous email templates and marketing campaign
+                contents.
+              </li>
+            </ul>
+            <div className="details">
+              <div>
+                <h5>SOLACATECH | Nigeria (Freelancing Company) : Remote</h5>
+                <div className="internDate">
+                  <h5>Junior Front End Developer | CONTRACT</h5>
+                  <span>June 2024 - present</span>
+                </div>
+                <p>SOLACATECH is a tech freelancing Company</p>
               </div>
-              <p>Moregift offers financial services</p>
+              <ul className="details">
+                <li>
+                  {" "}
+                  • Delivered high-performance, SEO-optimized websites tailored
+                  to client requirements. Converted email templates and SEO
+                  marketing contents.
+                </li>
+                <li>
+                  • Tested and debugged websites for efficiency and
+                  cross-browser compatibility.
+                </li>
+                <li>
+                  • Integrated backend technologies such as Node.js and PHP.
+                </li>
+                <li>
+                  • Translated Figma wire frames into production-ready code with
+                  responsive user interfaces.
+                </li>
+                <li>• Maintained version control using Git and GitHub.</li>
+                <li>
+                  • Participated in code reviews, weekends stand-ups, and agile
+                  development processes.
+                </li>
+                <li>
+                  • Set up project environments and configured tools like
+                  Webpack, Babel, and ESLint.
+                </li>
+                <li>• Kept up-to-date with frontend technology trends.</li>
+              </ul>
             </div>
-            <p>
-              • Developed and designed web applications by writing efficient,
-              modular, and maintainable code using HTML, CSS, and JavaScript
-            </p>
-            <p>
-              • Built and maintained web applications using frontend frameworks
-              like React.js and Next.js for scalability.
-            </p>
-            <p>
-              • Documented development processes, code changes, and project
-              progress to ensure clear communication within the team.
-            </p>
-            <p>
-              • Collaborated with senior developers in building complex features
-              and troubleshooting issues within the codebase.
-            </p>
-            <p>
-              • Worked with designers and backend developers to implement new
-              features and optimize existing ones.
-            </p>
-            <p>
-              • Implemented best practices for web performance optimization,
-              including SEO principles, lazy loading, and caching strategies.
-            </p>
-            <p>
-              • Tested and debugged web applications to ensure cross-browser
-              compatibility and responsiveness across various devices.
-            </p>
-            <p>
-              • Experienced with backend technologies such as Nodejs, Python,
-              MongoDB and RESTfull APIs.
-            </p>
-            <p>• Maintained version control using Git and GitHub.</p>
-            <p>
-              • Participated in daily stand-up meetings, contributing to agile
-              development processes and team collaboration
-            </p>
-            <p>
-              • Skilled in setting up and configuring webpacks, babel, Eslint
-              and node package manager (npm).
-            </p>
           </div>
         </div>
         <div className={`content ${taps === 1 && "activeContent"}`}>
@@ -93,7 +131,7 @@ const Resume = () => {
             <p>Diploma computer science (Associate).</p>
             <span> 2022 {""}- 2023 </span>
           </div>
-          <div className="contentEdu">
+          <div className="contentEdu " style={{ marginTop: "30px" }}>
             <h5>
               Federal University of Ndufu Alike(AE-FUNAI), Ebonyi State,
               Nigeria.

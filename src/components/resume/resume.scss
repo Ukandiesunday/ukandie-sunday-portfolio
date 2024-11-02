@@ -50,26 +50,34 @@
         margin-bottom: 10px;
         text-transform: capitalize;
       }
-      .details {
-        font-weight: 500;
-        line-height: 26px;
+      .details-wrapper {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-        max-width: 80%;
-        .internDate {
+        justify-content: space-between;
+        margin-top: 30px;
+
+        gap: 50px;
+        .details {
+          font-weight: 500;
+          line-height: 26px;
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          flex-direction: column;
+          gap: 10px;
+          max-width: 80%;
+          .internDate {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
         }
-      }
-      .contentEdu {
-        @extend .details;
-        line-height: 20px;
-        gap: 6px;
-        margin-top: 15px;
-        h5 {
-          text-transform: capitalize;
+        .contentEdu {
+          @extend .details;
+          line-height: 20px;
+          gap: 6px;
+          margin-top: 15px;
+
+          h5 {
+            text-transform: capitalize;
+          }
         }
       }
     }
@@ -89,10 +97,13 @@
           text-align: left;
           margin-block: 20px;
         }
-        .details {
-          max-width: 100%;
-          text-align: left;
-          line-height: 30px;
+        .details-wrapper {
+          flex-wrap: wrap;
+          .details {
+            max-width: 100%;
+            text-align: left;
+            line-height: 30px;
+          }
         }
       }
     }

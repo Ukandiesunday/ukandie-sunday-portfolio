@@ -65,6 +65,14 @@ const Skills = () => {
             <div className="ratingBarInner seventhRating"></div>
           </div>
         </div>
+        <div className="skills">
+          <span className="text">
+            Tailwind CSS <span>92%</span>
+          </span>
+          <div className="ratingBar">
+            <div className="ratingBarInner seventhRating"></div>
+          </div>
+        </div>
       </div>
     </div>
   );

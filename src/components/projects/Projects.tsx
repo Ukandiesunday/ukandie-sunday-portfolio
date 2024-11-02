@@ -1,8 +1,8 @@
 import blogimg from "../../assets/images/blog.png";
 import moregift from "../../assets/images/moregift-img.png";
 import carShop from "../../assets/images/newcar.png";
-import furniture from "../../assets/images/furn.png";
-import blog from "../../assets/images/css-blog.png";
+import quickseller from "../../assets/images/quick.png";
+import sola from "../../assets/images/solactec.png";
 import { useTheme } from "../../contexts/themecontext/ThemeProvider";
 import Title from "../title/Title";
 import "./projects.scss";
@@ -23,6 +23,25 @@ const Projects = () => {
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
+              <img className="img" src={sola} alt="css blog photo" />
+            </div>
+            <div className="linkContainer">
+              <h4>Company Marketing website</h4>
+              <a href="https://solacatech.com/" className="link">
+                <BiLink />
+              </a>
+            </div>
+            <p>
+              This multiple pages website showcases the services offer by
+              SOLACATECH Company, e.g Web development, Mobile development, UX/UI
+              design, IT consulting, Database Management, among others. <br />
+              Responsive, SEO-optimized and cross-browser compatible.
+            </p>
+          </div>
+        </div>
+        <div className="projectCards">
+          <div className="cardContentCols">
+            <div className="imgWrapper">
               <img className="img" src={carShop} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
@@ -35,25 +54,27 @@ const Projects = () => {
               </a>
             </div>
             <p>
-              This website allows users to purchase cars,add to cart, various
-              navigation views, user authentication,etc
+              This website allows users to purchase cars,add to cart, navigate
+              different views and user authentication system,etc
             </p>
           </div>
         </div>
+
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img className="img" src={blogimg} alt="ecommerce photo" />
+              <img className="img" src={quickseller} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
-              <h4>Blog website</h4>
-              <a href="https://u-blog-gist.vercel.app/" className="link">
+              <h4>Quick Seller Admin Dashboard</h4>
+              <a href="quick-seller-a.web.app" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              In this website, you stay informed and entertained. Check latest
-              weather and dive deeper into single posts details.
+              This admin dashboard manages these activities in the website such
+              as Vendors sales partnership, affiliates, dispatch riders, users
+              management and tracking of activity flows, etc.
             </p>
           </div>
         </div>
@@ -74,41 +95,20 @@ const Projects = () => {
             </p>
           </div>
         </div>
-
         <div className="projectCards">
           <div className="cardContentCols">
             <div className="imgWrapper">
-              <img className="img" src={furniture} alt="ecommerce photo" />
+              <img className="img" src={blogimg} alt="ecommerce photo" />
             </div>
             <div className="linkContainer">
-              <h4>Furniture website</h4>
-              <a href="https://anie-sons-furnitur.vercel.app/" className="link">
+              <h4>Blog website</h4>
+              <a href="https://u-blog-gist.vercel.app/" className="link">
                 <BiLink />
               </a>
             </div>
             <p>
-              This furniture website, built with HTML, CSS, and JavaScript,
-              allows users to filter furniture by category and more.
-            </p>
-          </div>
-        </div>
-        <div className="projectCards">
-          <div className="cardContentCols">
-            <div className="imgWrapper">
-              <img className="img" src={blog} alt="css blog photo" />
-            </div>
-            <div className="linkContainer">
-              <h4>Art & Design blog</h4>
-              <a
-                href="https://blog-landingpage-sage.vercel.app/"
-                className="link"
-              >
-                <BiLink />
-              </a>
-            </div>
-            <p>
-              This landing page, built with HTML and CSS, keeps users informed
-              about art and design work.
+              In this website, you stay informed and entertained. Check latest
+              weather and dive deeper into single posts details.
             </p>
           </div>
         </div>

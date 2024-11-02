@@ -51,9 +51,9 @@ const Banner = () => {
             </div>
             <p className="desc">
               {" "}
-              I am a passionate Front End Developer with over two years of
-              experience building resilient web applications. My expertise lies
-              in creating responsive and user-friendly websites.
+              I am a talented Front End Developer with two years of experience
+              building functional web applications. My expertise centers on
+              creating responsive and SEO-optimized websites.
             </p>
             <div className="socialFlex">
               <div className="cvContainer">
@@ -61,7 +61,7 @@ const Banner = () => {
                 <div className="cvWrapper">
                   <a
                     target="_blank"
-                    href="/images/ukandie_sunday_resumeu.pdf"
+                    href="/images/ukandie_sunday_cv_frontend.pdf"
                     download
                     className="cv"
                   >
