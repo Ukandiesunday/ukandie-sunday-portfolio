@@ -62,13 +62,10 @@ const Resume = () => {
                 • Implemented best practices for web performance optimization,
                 including SEO principles, lazy loading, and caching strategies.
               </li>
+
               <li>
-                • Tested and debugged web applications to ensure cross-browser
-                compatibility and responsiveness across various devices.
-              </li>
-              <li>
-                • Experienced with backend technologies such as Nodejs, Python,
-                MongoDB and RESTfull APIs.
+                • Experienced with backend technologies such as Nodejs, and
+                RESTfull APIs.
               </li>
               <li>• Maintained version control using Git and GitHub.</li>
               <li>
