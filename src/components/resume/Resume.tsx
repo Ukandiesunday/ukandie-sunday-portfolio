@@ -52,7 +52,7 @@ const Resume = () => {
               <li>• Documented development processes and project progress.</li>
               <li>
                 • Assisted in building complex features and troubleshooting
-                issues within the code base with constructive feed backs.
+                issues in the code base giving constructive feed backs.
               </li>
               <li>
                 • Collaborated seamlessly with design and backend teams to
