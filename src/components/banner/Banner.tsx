@@ -51,9 +51,10 @@ const Banner = () => {
             </div>
             <p className="desc">
               {" "}
-              I am a talented Front End Developer with two years of experience
-              building functional web applications. My expertise centers on
-              creating responsive and SEO-optimized websites.
+              I’m a talented Front-End Developer with 2+ years of experience
+              creating user-focused web solutions. I’m passionate about
+              transforming complex ideas into intuitive and impactful products
+              that drive engagement and deliver results.
             </p>
             <div className="socialFlex">
               <div className="cvContainer">
