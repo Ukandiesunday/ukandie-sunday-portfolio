@@ -13,18 +13,20 @@ const About = () => {
           <Title title={"About Me"} />
         </div>
         <p>
-          I am a passionate Front End Developer with a knack for crafting
-          stunning and engaging user interfaces. With over two years of
-          experience, I excel at translating design mockups into interactive,
-          responsive web pages with meticulous attention to detail. During my
-          internship at Moregift, I honed my skills in project setup, time
-          management, writing clean and maintainable code. I thrive in
-          collaborative settings, effectively partnering with design and backend
-          teams to implement features and solve complex challenges. With strong
-          communication, problem-solving, and analytical abilities, I am eager
-          to contribute my expertise to your team and drive innovative digital
-          solutions. I am committed to continuous learning and quickly adapt to
-          new technologies and dynamic environments.
+          I’m a results-driven Front-End Developer with over two years of
+          experience creating impactful and user-focused web solutions. <br />{" "}
+          At Solacatech, I developed a high-performance and SEO-optimized
+          websites that deliver exceptional results. Seamlessly integrated APIs,
+          and collaborated with cross-functional team to build efficient and
+          scalable products that exceeded client expectations. <br /> During my
+          internship at Moregift, I focused on learning and translating of
+          complex designs from Figma into functional web applications,
+          collaborated with backend teams to integrate services, and delivered
+          clean, responsive code. I thrive on solving challenges, driving
+          innovation, and creating seamless user experiences. Outside of work, I
+          enjoy designs, gaming, and mentoring aspiring developers to foster
+          growth in the tech community. <br /> I’m eager to bring my expertise
+          to your team and build exceptional digital solutions.
         </p>
       </div>
     </div>

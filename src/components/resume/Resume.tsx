@@ -79,12 +79,12 @@ const Resume = () => {
             </ul>
             <div className="details">
               <div>
-                <h5>SOLACATECH | Nigeria (Freelancing Company) : Remote</h5>
+                <h5>SOLACATECH | Nigeria (Tech Company) : Remote</h5>
                 <div className="internDate">
                   <h5>Junior Front End Developer | CONTRACT</h5>
                   <span>June 2024 - present</span>
                 </div>
-                <p>SOLACATECH is a tech freelancing Company</p>
+                <p>SOLACATECH is a Tech Company</p>
               </div>
               <ul className="details">
                 <li>
@@ -120,15 +120,15 @@ const Resume = () => {
         </div>
         <div className={`content ${taps === 1 && "activeContent"}`}>
           <h4>Education</h4>
-          <div className="contentEdu">
+          <div className="contentEdu contentEdu2">
             <h5>
               Akwa Ibom College of Science and Technology, Nnung Ukim Ikono,
               Nigeria.
             </h5>
             <p>Diploma computer science (Associate).</p>
-            <span> 2022 {""}- 2023 </span>
+            <span> 2023 {""}- 2024 </span>
           </div>
-          <div className="contentEdu " style={{ marginTop: "30px" }}>
+          <div className="contentEdu " style={{ marginTop: "20px" }}>
             <h5>
               Federal University of Ndufu Alike(AE-FUNAI), Ebonyi State,
               Nigeria.
@@ -136,11 +136,18 @@ const Resume = () => {
             <p>Bachelor's Degree in Accounting.,</p>
             <span>Feb 2017 {""}- March 2021 </span>
           </div>
-          {/* <div className="contentEdu">
+          <div className="contentEdu" style={{ marginTop: "20px" }}>
             <h5>National youth Service Corps (NYSC)</h5>
 
             <span>Feb 2022 - feb 2023 </span>
-          </div> */}
+          </div>
+          <div className="contentEdu" style={{ marginTop: "20px" }}>
+            <p>Completed Front-End Web Development Courses on UDEMY</p>
+            <p style={{ marginTop: "15px" }}>
+              Completed Software Testing Training BootCamp at The Bug Detective
+              (TBD) Company , (Nigeria). July 2024 - October 2024
+            </p>
+          </div>
         </div>
       </div>
     </div>
