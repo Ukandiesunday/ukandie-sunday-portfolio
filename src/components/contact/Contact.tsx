@@ -84,7 +84,7 @@ const Contact = () => {
             <Title title={"Get In Touch"} />
           </div>
           <p>
-            I'm at your services, contact me and see my creativity work for your
+            I'm at your services, Hire me and see my creativity works for your
             business.
           </p>
           <div className="imgContainer ">
