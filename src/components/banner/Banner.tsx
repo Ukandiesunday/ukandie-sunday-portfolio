@@ -1,8 +1,8 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import profileImg from "../../assets/images/ukedited3.png";
-import profileImgMobile from "../../assets/images/ukedited3.png";
+import profileImg from "../../assets/images/ukedited3.webp";
+import profileImgMobile from "../../assets/images/ukedited3.webp";
 import { FaGithub } from "react-icons/fa";
 
 import { FaSass, FaHtml5, FaCss3, FaJira } from "react-icons/fa";

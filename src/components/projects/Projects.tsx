@@ -67,7 +67,7 @@ const Projects = () => {
             </div>
             <div className="linkContainer">
               <h4>Quick Seller Admin Dashboard</h4>
-              <a href="quick-seller-a.web.app" className="link">
+              <a href="https://quick-seller-a.web.app/" className="link">
                 <BiLink />
               </a>
             </div>
